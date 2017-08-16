@@ -1,0 +1,157 @@
+--------------------------------------------------------------------------------
+Release 14.4 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+F:\ise\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml Pipeline_all.twx Pipeline_all.ncd -o Pipeline_all.twr
+Pipeline_all.pcf -ucf pp.ucf
+
+Design file:              Pipeline_all.ncd
+Physical constraint file: Pipeline_all.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2012-12-04)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock reset to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+regvalue<0> |   17.058(R)|reset_IBUF        |   0.000|
+regvalue<1> |   18.459(R)|reset_IBUF        |   0.000|
+regvalue<2> |   16.709(R)|reset_IBUF        |   0.000|
+regvalue<3> |   16.410(R)|reset_IBUF        |   0.000|
+regvalue<4> |   18.084(R)|reset_IBUF        |   0.000|
+regvalue<5> |   16.926(R)|reset_IBUF        |   0.000|
+regvalue<6> |   16.569(R)|reset_IBUF        |   0.000|
+regvalue<7> |   15.399(R)|reset_IBUF        |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    8.510|    3.489|    4.265|         |
+reset          |    8.325|   12.166|    2.855|    5.851|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    7.352|         |    3.066|         |
+reset          |    4.750|    8.130|   -0.322|   -0.322|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+regnum0        |regvalue<0>    |    7.186|
+regnum0        |regvalue<1>    |    9.154|
+regnum0        |regvalue<2>    |    6.937|
+regnum0        |regvalue<3>    |    8.230|
+regnum0        |regvalue<4>    |   10.125|
+regnum0        |regvalue<5>    |    8.483|
+regnum0        |regvalue<6>    |    9.949|
+regnum0        |regvalue<7>    |    8.498|
+regnum1        |regvalue<0>    |    9.438|
+regnum1        |regvalue<1>    |   10.600|
+regnum1        |regvalue<2>    |   10.648|
+regnum1        |regvalue<3>    |   10.400|
+regnum1        |regvalue<4>    |   10.412|
+regnum1        |regvalue<5>    |    9.641|
+regnum1        |regvalue<6>    |    8.406|
+regnum1        |regvalue<7>    |    7.499|
+regnum2        |regvalue<0>    |    8.498|
+regnum2        |regvalue<1>    |    9.753|
+regnum2        |regvalue<2>    |    9.238|
+regnum2        |regvalue<3>    |    9.081|
+regnum2        |regvalue<4>    |   10.750|
+regnum2        |regvalue<5>    |    8.951|
+regnum2        |regvalue<6>    |    8.399|
+regnum2        |regvalue<7>    |    7.721|
+regnum3        |regvalue<0>    |    9.696|
+regnum3        |regvalue<1>    |   10.276|
+regnum3        |regvalue<2>    |   10.250|
+regnum3        |regvalue<3>    |    9.940|
+regnum3        |regvalue<4>    |   11.140|
+regnum3        |regvalue<5>    |   10.371|
+regnum3        |regvalue<6>    |    9.510|
+regnum3        |regvalue<7>    |    9.230|
+regnum4        |regvalue<0>    |   12.114|
+regnum4        |regvalue<1>    |   13.586|
+regnum4        |regvalue<2>    |   13.365|
+regnum4        |regvalue<3>    |   12.606|
+regnum4        |regvalue<4>    |   13.567|
+regnum4        |regvalue<5>    |   13.029|
+regnum4        |regvalue<6>    |   11.067|
+regnum4        |regvalue<7>    |    9.944|
+regnum5        |regvalue<0>    |   10.419|
+regnum5        |regvalue<1>    |   11.441|
+regnum5        |regvalue<2>    |   10.949|
+regnum5        |regvalue<3>    |   10.163|
+regnum5        |regvalue<4>    |   11.660|
+regnum5        |regvalue<5>    |   10.030|
+regnum5        |regvalue<6>    |   11.310|
+regnum5        |regvalue<7>    |   10.593|
+regnum6        |regvalue<0>    |   11.004|
+regnum6        |regvalue<1>    |   12.802|
+regnum6        |regvalue<2>    |   10.753|
+regnum6        |regvalue<3>    |   11.250|
+regnum6        |regvalue<4>    |   12.943|
+regnum6        |regvalue<5>    |   11.729|
+regnum6        |regvalue<6>    |   12.776|
+regnum6        |regvalue<7>    |   11.558|
+regnum7        |regvalue<0>    |   12.099|
+regnum7        |regvalue<1>    |   13.937|
+regnum7        |regvalue<2>    |   12.207|
+regnum7        |regvalue<3>    |   12.872|
+regnum7        |regvalue<4>    |   14.814|
+regnum7        |regvalue<5>    |   13.575|
+regnum7        |regvalue<6>    |   14.311|
+regnum7        |regvalue<7>    |   13.158|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jan 09 23:24:53 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 175 MB
+
+
+

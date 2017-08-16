@@ -1,0 +1,7 @@
+        lw      0       1       one     load reg1 with 1
+        lw      0       2       zero    load reg2 with 0
+        nand    1       2       4       reg4=!(reg1&&reg2)
+        nand    1       1       5       reg5=!(reg1&&reg1)
+        nand    2       2       6       reg6=!(reg2&&reg2)
+one     .fill   1
+zero    .fill   0

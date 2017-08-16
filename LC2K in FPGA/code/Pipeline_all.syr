@@ -1,0 +1,1904 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Reading design: Pipeline_all.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Pipeline_all.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Pipeline_all"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Pipeline_all
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/example/code/reg.vhd" in Library work.
+Entity <reg> compiled.
+Entity <reg> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/adder.vhd" in Library work.
+Entity <adder> compiled.
+Entity <adder> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/mux2.vhd" in Library work.
+Entity <mux2> compiled.
+Entity <mux2> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/IF_ID_REG.vhd" in Library work.
+Entity <IF_ID_REG> compiled.
+Entity <IF_ID_REG> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/fetch_control.vhd" in Library work.
+Entity <fetch_control> compiled.
+Entity <fetch_control> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/reg_file.vhd" in Library work.
+Entity <register_file> compiled.
+Entity <register_file> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/dest_reg.vhd" in Library work.
+Entity <dest_reg> compiled.
+Entity <dest_reg> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/reg_mux.vhd" in Library work.
+Entity <muxr> compiled.
+Entity <muxr> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/ID_EX_REG.vhd" in Library work.
+Entity <ID_EX_REG> compiled.
+Entity <ID_EX_REG> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/decode_control.vhd" in Library work.
+Entity <decode_control> compiled.
+Entity <decode_control> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/data_hazard.vhd" in Library work.
+Entity <data_hazatd_detect> compiled.
+Entity <data_hazatd_detect> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/sign_extend.vhd" in Library work.
+Entity <sext> compiled.
+Entity <sext> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/four_to_one_mux.vhd" in Library work.
+Entity <mux4> compiled.
+Entity <mux4> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/ALU.vhd" in Library work.
+Entity <LC2_ALU> compiled.
+Entity <LC2_ALU> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/EX_MEM_REG.vhd" in Library work.
+Entity <EX_MEM_REG> compiled.
+Entity <EX_MEM_REG> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/excute_control.vhd" in Library work.
+Entity <excute_control> compiled.
+Entity <excute_control> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/ram.vhd" in Library work.
+Entity <data_mem> compiled.
+Entity <data_mem> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/MEM_WB_REG.vhd" in Library work.
+Entity <MEM_WB_REG> compiled.
+Entity <MEM_WB_REG> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/memory_control.vhd" in Library work.
+Entity <memory_control> compiled.
+Entity <memory_control> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/write_back_control.vhd" in Library work.
+Entity <write_back_control> compiled.
+Entity <write_back_control> (Architecture <bhv>) compiled.
+Compiling vhdl file "E:/example/code/pipeline_all.vhd" in Library work.
+Entity <Pipeline_all> compiled.
+Entity <Pipeline_all> (Architecture <str>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Pipeline_all> in library <work> (architecture <str>).
+
+Analyzing hierarchy for entity <reg> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <IF_ID_REG> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <fetch_control> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <register_file> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <dest_reg> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <muxr> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <ID_EX_REG> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <decode_control> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <data_hazatd_detect> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <sext> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <mux4> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <LC2_ALU> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <EX_MEM_REG> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <excute_control> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <data_mem> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <MEM_WB_REG> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <memory_control> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <write_back_control> in library <work> (architecture <bhv>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Pipeline_all> in library <work> (Architecture <str>).
+WARNING:Xst:819 - "E:/example/code/pipeline_all.vhd" line 354: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <r0>, <r1>, <r2>, <r3>, <r4>, <r5>, <r6>, <r7>
+Entity <Pipeline_all> analyzed. Unit <Pipeline_all> generated.
+
+Analyzing Entity <reg> in library <work> (Architecture <bhv>).
+Entity <reg> analyzed. Unit <reg> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <bhv>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+Analyzing Entity <mux2> in library <work> (Architecture <bhv>).
+Entity <mux2> analyzed. Unit <mux2> generated.
+
+Analyzing Entity <IF_ID_REG> in library <work> (Architecture <bhv>).
+WARNING:Xst:819 - "E:/example/code/IF_ID_REG.vhd" line 19: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <instr>, <pc_plus_1>
+Entity <IF_ID_REG> analyzed. Unit <IF_ID_REG> generated.
+
+Analyzing Entity <fetch_control> in library <work> (Architecture <bhv>).
+WARNING:Xst:819 - "E:/example/code/fetch_control.vhd" line 18: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
+Entity <fetch_control> analyzed. Unit <fetch_control> generated.
+
+Analyzing Entity <register_file> in library <work> (Architecture <bhv>).
+WARNING:Xst:819 - "E:/example/code/reg_file.vhd" line 32: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reg>, <DR_enable>
+WARNING:Xst:819 - "E:/example/code/reg_file.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reg>
+Entity <register_file> analyzed. Unit <register_file> generated.
+
+Analyzing Entity <dest_reg> in library <work> (Architecture <bhv>).
+Entity <dest_reg> analyzed. Unit <dest_reg> generated.
+
+Analyzing Entity <muxr> in library <work> (Architecture <bhv>).
+Entity <muxr> analyzed. Unit <muxr> generated.
+
+Analyzing Entity <ID_EX_REG> in library <work> (Architecture <bhv>).
+Entity <ID_EX_REG> analyzed. Unit <ID_EX_REG> generated.
+
+Analyzing Entity <decode_control> in library <work> (Architecture <bhv>).
+Entity <decode_control> analyzed. Unit <decode_control> generated.
+
+Analyzing Entity <data_hazatd_detect> in library <work> (Architecture <bhv>).
+WARNING:Xst:819 - "E:/example/code/data_hazard.vhd" line 24: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sourcerega>, <destrega>, <sourceregb>, <thisopcode>, <destregb>, <opcode>
+Entity <data_hazatd_detect> analyzed. Unit <data_hazatd_detect> generated.
+
+Analyzing Entity <sext> in library <work> (Architecture <bhv>).
+Entity <sext> analyzed. Unit <sext> generated.
+
+Analyzing Entity <mux4> in library <work> (Architecture <bhv>).
+Entity <mux4> analyzed. Unit <mux4> generated.
+
+Analyzing Entity <LC2_ALU> in library <work> (Architecture <bhv>).
+Entity <LC2_ALU> analyzed. Unit <LC2_ALU> generated.
+
+Analyzing Entity <EX_MEM_REG> in library <work> (Architecture <bhv>).
+Entity <EX_MEM_REG> analyzed. Unit <EX_MEM_REG> generated.
+
+Analyzing Entity <excute_control> in library <work> (Architecture <bhv>).
+Entity <excute_control> analyzed. Unit <excute_control> generated.
+
+Analyzing Entity <data_mem> in library <work> (Architecture <bhv>).
+WARNING:Xst:790 - "E:/example/code/ram.vhd" line 60: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <mem> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/example/code/ram.vhd" line 61: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <mem> may be accessed with an index that does not cover the full array size.
+Entity <data_mem> analyzed. Unit <data_mem> generated.
+
+Analyzing Entity <MEM_WB_REG> in library <work> (Architecture <bhv>).
+Entity <MEM_WB_REG> analyzed. Unit <MEM_WB_REG> generated.
+
+Analyzing Entity <memory_control> in library <work> (Architecture <bhv>).
+Entity <memory_control> analyzed. Unit <memory_control> generated.
+
+Analyzing Entity <write_back_control> in library <work> (Architecture <bhv>).
+Entity <write_back_control> analyzed. Unit <write_back_control> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <reg>.
+    Related source file is "E:/example/code/reg.vhd".
+    Found 32-bit register for signal <O>.
+    Found 32-bit register for signal <temp>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <reg> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "E:/example/code/adder.vhd".
+    Found 32-bit adder for signal <O>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <mux2>.
+    Related source file is "E:/example/code/mux2.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <muxoutput>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux2> synthesized.
+
+
+Synthesizing Unit <IF_ID_REG>.
+    Related source file is "E:/example/code/IF_ID_REG.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <temp1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <instrout>.
+    Found 32-bit register for signal <pc_out>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <IF_ID_REG> synthesized.
+
+
+Synthesizing Unit <fetch_control>.
+    Related source file is "E:/example/code/fetch_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <fetch_control> synthesized.
+
+
+Synthesizing Unit <register_file>.
+    Related source file is "E:/example/code/reg_file.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 8-to-1 multiplexer for signal <$varindex0000> created at line 45.
+    Found 32-bit 8-to-1 multiplexer for signal <$varindex0001> created at line 46.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <register_file> synthesized.
+
+
+Synthesizing Unit <dest_reg>.
+    Related source file is "E:/example/code/dest_reg.vhd".
+WARNING:Xst:653 - Signal <temp4> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+    Found 3-bit register for signal <destoutsec>.
+    Found 3-bit register for signal <destoutthi>.
+    Found 3-bit register for signal <destoutfir>.
+    Found 3-bit register for signal <temp1>.
+    Found 3-bit register for signal <temp2>.
+    Found 3-bit register for signal <temp3>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <dest_reg> synthesized.
+
+
+Synthesizing Unit <muxr>.
+    Related source file is "E:/example/code/reg_mux.vhd".
+Unit <muxr> synthesized.
+
+
+Synthesizing Unit <ID_EX_REG>.
+    Related source file is "E:/example/code/ID_EX_REG.vhd".
+    Found 32-bit register for signal <thirdout>.
+    Found 32-bit register for signal <firstout>.
+    Found 16-bit register for signal <offsetout>.
+    Found 32-bit register for signal <secondout>.
+    Found 1-bit register for signal <hazard1>.
+    Found 1-bit register for signal <hazard2>.
+    Found 1-bit register for signal <hazard3>.
+    Found 1-bit register for signal <hazard4>.
+    Found 3-bit register for signal <opcodeout>.
+    Summary:
+	inferred 119 D-type flip-flop(s).
+Unit <ID_EX_REG> synthesized.
+
+
+Synthesizing Unit <decode_control>.
+    Related source file is "E:/example/code/decode_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <decode_control> synthesized.
+
+
+Synthesizing Unit <data_hazatd_detect>.
+    Related source file is "E:/example/code/data_hazard.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit comparator equal for signal <hazard3$cmp_eq0000> created at line 54.
+    Found 3-bit comparator equal for signal <hazard4$cmp_eq0000> created at line 59.
+    Found 3-bit comparator equal for signal <temp1$cmp_eq0000> created at line 35.
+    Found 3-bit comparator equal for signal <temp2$cmp_eq0000> created at line 42.
+    Summary:
+	inferred   4 Comparator(s).
+Unit <data_hazatd_detect> synthesized.
+
+
+Synthesizing Unit <sext>.
+    Related source file is "E:/example/code/sign_extend.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <sext> synthesized.
+
+
+Synthesizing Unit <mux4>.
+    Related source file is "E:/example/code/four_to_one_mux.vhd".
+Unit <mux4> synthesized.
+
+
+Synthesizing Unit <LC2_ALU>.
+    Related source file is "E:/example/code/ALU.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O>.
+    Found 32-bit comparator equal for signal <EQ$cmp_eq0000> created at line 29.
+    Found 32-bit adder for signal <O$addsub0000> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <LC2_ALU> synthesized.
+
+
+Synthesizing Unit <EX_MEM_REG>.
+    Related source file is "E:/example/code/EX_MEM_REG.vhd".
+    Found 1-bit register for signal <equalout>.
+    Found 32-bit register for signal <targetout>.
+    Found 32-bit register for signal <valbout>.
+    Found 3-bit register for signal <opcodeout>.
+    Found 32-bit register for signal <aluresultout>.
+    Summary:
+	inferred 100 D-type flip-flop(s).
+Unit <EX_MEM_REG> synthesized.
+
+
+Synthesizing Unit <excute_control>.
+    Related source file is "E:/example/code/excute_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1608 - Relative priorities of control signals on register <muxout_2> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 2-bit latch for signal <muxout_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:1608 - Relative priorities of control signals on register <Q> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 2-bit latch for signal <muxout_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <muxout_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <excute_control> synthesized.
+
+
+Synthesizing Unit <data_mem>.
+    Related source file is "E:/example/code/ram.vhd".
+WARNING:Xst:647 - Input <inaddr<31:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <indata_out>.
+    Found 32-bit register for signal <data_out>.
+    Found 32-bit 16-to-1 multiplexer for signal <$varindex0000> created at line 60.
+    Found 32-bit 16-to-1 multiplexer for signal <$varindex0001> created at line 48.
+    Found 512-bit register for signal <mem>.
+    Found 32-bit register for signal <temp>.
+INFO:Xst:738 - HDL ADVISOR - 512 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 320 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <data_mem> synthesized.
+
+
+Synthesizing Unit <MEM_WB_REG>.
+    Related source file is "E:/example/code/MEM_WB_REG.vhd".
+    Found 32-bit register for signal <firstout>.
+    Found 32-bit register for signal <secondout>.
+    Found 3-bit register for signal <opcodeout>.
+    Summary:
+	inferred  67 D-type flip-flop(s).
+Unit <MEM_WB_REG> synthesized.
+
+
+Synthesizing Unit <memory_control>.
+    Related source file is "E:/example/code/memory_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <memR_W>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <memory_control> synthesized.
+
+
+Synthesizing Unit <write_back_control>.
+    Related source file is "E:/example/code/write_back_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <muxout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <write_back_control> synthesized.
+
+
+Synthesizing Unit <Pipeline_all>.
+    Related source file is "E:/example/code/pipeline_all.vhd".
+WARNING:Xst:646 - Signal <r7<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r6<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r5<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r4<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r3<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r2<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r1<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r0<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ground32> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ground> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Vcc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <IF_ID_REG_inst_out<31:25>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <EX_MEM_eq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Pipeline_all> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 352
+ 1-bit register                                        : 327
+ 3-bit register                                        : 3
+ 32-bit register                                       : 22
+# Latches                                              : 15
+ 1-bit latch                                           : 2
+ 2-bit latch                                           : 3
+ 32-bit latch                                          : 10
+# Comparators                                          : 5
+ 3-bit comparator equal                                : 4
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 8
+ 32-bit 16-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 32-bit 8-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <instrout_25> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_26> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_27> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_28> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_29> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_30> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <instrout_31> of sequential type is unconnected in block <U_IF_ID_REG>.
+WARNING:Xst:2677 - Node <indata_out_25> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_26> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_27> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_28> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_29> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_30> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <indata_out_31> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_25> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_26> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_27> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_28> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_29> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_30> of sequential type is unconnected in block <U_data_mem>.
+WARNING:Xst:2677 - Node <temp_31> of sequential type is unconnected in block <U_data_mem>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 1040
+ Flip-Flops                                            : 1040
+# Latches                                              : 15
+ 1-bit latch                                           : 2
+ 2-bit latch                                           : 3
+ 32-bit latch                                          : 10
+# Comparators                                          : 5
+ 3-bit comparator equal                                : 4
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 70
+ 1-bit 16-to-1 multiplexer                             : 64
+ 32-bit 4-to-1 multiplexer                             : 4
+ 32-bit 8-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Pipeline_all> ...
+
+Optimizing unit <reg> ...
+
+Optimizing unit <dest_reg> ...
+
+Optimizing unit <ID_EX_REG> ...
+
+Optimizing unit <LC2_ALU> ...
+
+Optimizing unit <EX_MEM_REG> ...
+
+Optimizing unit <MEM_WB_REG> ...
+
+Optimizing unit <IF_ID_REG> ...
+
+Optimizing unit <register_file> ...
+
+Optimizing unit <excute_control> ...
+
+Optimizing unit <data_mem> ...
+WARNING:Xst:2677 - Node <U_PC/temp_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/temp_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_PC/O_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_1> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_2> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_0> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_3> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/firstout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/thirdout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_ID_EX_REG/secondout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_0> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_1> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/valbout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_3> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_2> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/targetout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/aluresultout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_EX_MEM_REG/equalout> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/firstout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_MEM_WB_REG/secondout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp1_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_3> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_2> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_1> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/temp2_0> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_0> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_1> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_2> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_3> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_4> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_5> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_6> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_7> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_8> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_9> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_10> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_11> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_12> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_13> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_15> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_16> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_14> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_17> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_18> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_19> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_20> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_21> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_22> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_24> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_23> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/pc_out_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_IF_ID_REG/instrout_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_6_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_7_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_0_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_1_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_2_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_3_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_4_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_REG_bank/reg_5_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_4_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_5_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_6_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_7_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_8_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_0_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_1_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_2_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_3_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/temp_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/data_out_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_15_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_13_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_12_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_14_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_11_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_9_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/mem_10_25> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_31> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_30> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_29> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_28> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_27> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_26> of sequential type is unconnected in block <Pipeline_all>.
+WARNING:Xst:2677 - Node <U_data_mem/indata_out_25> of sequential type is unconnected in block <Pipeline_all>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Pipeline_all, actual ratio is 103.
+Optimizing block <Pipeline_all> to meet ratio 100 (+ 5) of 960 slices :
+Area constraint is met for block <Pipeline_all>, final ratio is 99.
+FlipFlop U_IF_ID_REG/instrout_17 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 706
+ Flip-Flops                                            : 706
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Pipeline_all.ngr
+Top Level Output File Name         : Pipeline_all
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 1963
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 3
+#      LUT2                        : 283
+#      LUT2_L                      : 15
+#      LUT3                        : 680
+#      LUT3_D                      : 3
+#      LUT4                        : 329
+#      LUT4_D                      : 4
+#      LUT4_L                      : 11
+#      MUXCY                       : 27
+#      MUXF5                       : 375
+#      MUXF6                       : 150
+#      MUXF7                       : 50
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 939
+#      FDC                         : 29
+#      FDCE                        : 368
+#      FDCE_1                      : 25
+#      FDCP                        : 188
+#      FDE                         : 64
+#      FDPE                        : 32
+#      LD                          : 2
+#      LD_1                        : 25
+#      LDC                         : 1
+#      LDCE                        : 125
+#      LDCE_1                      : 25
+#      LDCP                        : 5
+#      LDE_1                       : 50
+# Clock Buffers                    : 8
+#      BUFG                        : 7
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      956  out of    960    99%  
+ Number of Slice Flip Flops:            939  out of   1920    48%  
+ Number of 4 input LUTs:               1330  out of   1920    69%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of     83    21%  
+ Number of GCLKs:                         8  out of     24    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------+-------------------------------------+-------+
+Clock Signal                                                               | Clock buffer(FF name)               | Load  |
+---------------------------------------------------------------------------+-------------------------------------+-------+
+U_memory_control/memR_W_not0001(U_memory_control/memR_W_not00011:O)        | NONE(*)(U_memory_control/memR_W)    | 1     |
+U_write_back_control/muxout_not0001(U_write_back_control/muxout_not00011:O)| NONE(*)(U_write_back_control/muxout)| 1     |
+clock                                                                      | BUFGP                               | 706   |
+reset                                                                      | IBUF+BUFG                           | 75    |
+U_REG_bank/reg_0_not00011(U_REG_bank/reg_0_not00011:O)                     | BUFG(*)(U_REG_bank/reg_0_24)        | 25    |
+U_REG_bank/reg_1_cmp_eq00001(U_REG_bank/reg_1_cmp_eq00001:O)               | BUFG(*)(U_REG_bank/reg_1_24)        | 25    |
+U_REG_bank/reg_2_cmp_eq00001(U_REG_bank/reg_2_cmp_eq00001:O)               | BUFG(*)(U_REG_bank/reg_2_24)        | 25    |
+U_REG_bank/reg_3_cmp_eq00001(U_REG_bank/reg_3_cmp_eq00001:O)               | BUFG(*)(U_REG_bank/reg_3_24)        | 25    |
+U_REG_bank/reg_4_cmp_eq00001(U_REG_bank/reg_4_cmp_eq00001:O)               | BUFG(*)(U_REG_bank/reg_4_24)        | 25    |
+U_REG_bank/reg_5_cmp_eq00001(U_REG_bank/reg_5_cmp_eq00001:O)               | BUFG(*)(U_REG_bank/reg_5_24)        | 25    |
+U_ID_EX_REG/hazard3                                                        | NONE(U_excute_control/muxout_1_1)   | 2     |
+U_ID_EX_REG/hazard4                                                        | NONE(U_excute_control/muxout_2_1)   | 4     |
+---------------------------------------------------------------------------+-------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------+----------------------------------+-------+
+Control Signal                                                               | Buffer(FF name)                  | Load  |
+-----------------------------------------------------------------------------+----------------------------------+-------+
+reset                                                                        | IBUF                             | 696   |
+N0(XST_GND:G)                                                                | NONE(U_EX_MEM_REG/aluresultout_0)| 92    |
+U_excute_control/muxout_1_0__or0000(U_excute_control/muxout_1_0__or00001:O)  | NONE(U_excute_control/muxout_1_0)| 2     |
+U_EX_MEM_REG/opcodeout_0_and0000(U_EX_MEM_REG/opcodeout_0_and00001:O)        | NONE(U_EX_MEM_REG/opcodeout_0)   | 1     |
+U_EX_MEM_REG/opcodeout_0_and0001(U_EX_MEM_REG/opcodeout_0_and00011:O)        | NONE(U_EX_MEM_REG/opcodeout_0)   | 1     |
+U_EX_MEM_REG/opcodeout_1_and0000(U_EX_MEM_REG/opcodeout_1_and00001:O)        | NONE(U_EX_MEM_REG/opcodeout_1)   | 1     |
+U_EX_MEM_REG/opcodeout_1_and0001(U_EX_MEM_REG/opcodeout_1_and00011:O)        | NONE(U_EX_MEM_REG/opcodeout_1)   | 1     |
+U_EX_MEM_REG/opcodeout_2_and0000(U_EX_MEM_REG/opcodeout_2_and00001:O)        | NONE(U_EX_MEM_REG/opcodeout_2)   | 1     |
+U_EX_MEM_REG/opcodeout_2_and0001(U_EX_MEM_REG/opcodeout_2_and00011:O)        | NONE(U_EX_MEM_REG/opcodeout_2)   | 1     |
+U_EX_MEM_REG/valbout_0_and0000(U_EX_MEM_REG/valbout_0_and00001:O)            | NONE(U_EX_MEM_REG/valbout_0)     | 1     |
+U_EX_MEM_REG/valbout_0_and0001(U_EX_MEM_REG/valbout_0_and00011:O)            | NONE(U_EX_MEM_REG/valbout_0)     | 1     |
+U_EX_MEM_REG/valbout_10_and0000(U_EX_MEM_REG/valbout_10_and00001:O)          | NONE(U_EX_MEM_REG/valbout_10)    | 1     |
+U_EX_MEM_REG/valbout_10_and0001(U_EX_MEM_REG/valbout_10_and00011:O)          | NONE(U_EX_MEM_REG/valbout_10)    | 1     |
+U_EX_MEM_REG/valbout_11_and0000(U_EX_MEM_REG/valbout_11_and00001:O)          | NONE(U_EX_MEM_REG/valbout_11)    | 1     |
+U_EX_MEM_REG/valbout_11_and0001(U_EX_MEM_REG/valbout_11_and00011:O)          | NONE(U_EX_MEM_REG/valbout_11)    | 1     |
+U_EX_MEM_REG/valbout_12_and0000(U_EX_MEM_REG/valbout_12_and00001:O)          | NONE(U_EX_MEM_REG/valbout_12)    | 1     |
+U_EX_MEM_REG/valbout_12_and0001(U_EX_MEM_REG/valbout_12_and00011:O)          | NONE(U_EX_MEM_REG/valbout_12)    | 1     |
+U_EX_MEM_REG/valbout_13_and0000(U_EX_MEM_REG/valbout_13_and00001:O)          | NONE(U_EX_MEM_REG/valbout_13)    | 1     |
+U_EX_MEM_REG/valbout_13_and0001(U_EX_MEM_REG/valbout_13_and00011:O)          | NONE(U_EX_MEM_REG/valbout_13)    | 1     |
+U_EX_MEM_REG/valbout_14_and0000(U_EX_MEM_REG/valbout_14_and00001:O)          | NONE(U_EX_MEM_REG/valbout_14)    | 1     |
+U_EX_MEM_REG/valbout_14_and0001(U_EX_MEM_REG/valbout_14_and00011:O)          | NONE(U_EX_MEM_REG/valbout_14)    | 1     |
+U_EX_MEM_REG/valbout_1_and0000(U_EX_MEM_REG/valbout_1_and00001:O)            | NONE(U_EX_MEM_REG/valbout_1)     | 1     |
+U_EX_MEM_REG/valbout_1_and0001(U_EX_MEM_REG/valbout_1_and00011:O)            | NONE(U_EX_MEM_REG/valbout_1)     | 1     |
+U_EX_MEM_REG/valbout_2_and0000(U_EX_MEM_REG/valbout_2_and00001:O)            | NONE(U_EX_MEM_REG/valbout_2)     | 1     |
+U_EX_MEM_REG/valbout_2_and0001(U_EX_MEM_REG/valbout_2_and00011:O)            | NONE(U_EX_MEM_REG/valbout_2)     | 1     |
+U_EX_MEM_REG/valbout_3_and0000(U_EX_MEM_REG/valbout_3_and00001:O)            | NONE(U_EX_MEM_REG/valbout_3)     | 1     |
+U_EX_MEM_REG/valbout_3_and0001(U_EX_MEM_REG/valbout_3_and00011:O)            | NONE(U_EX_MEM_REG/valbout_3)     | 1     |
+U_EX_MEM_REG/valbout_4_and0000(U_EX_MEM_REG/valbout_4_and00001:O)            | NONE(U_EX_MEM_REG/valbout_4)     | 1     |
+U_EX_MEM_REG/valbout_4_and0001(U_EX_MEM_REG/valbout_4_and00011:O)            | NONE(U_EX_MEM_REG/valbout_4)     | 1     |
+U_EX_MEM_REG/valbout_5_and0000(U_EX_MEM_REG/valbout_5_and00001:O)            | NONE(U_EX_MEM_REG/valbout_5)     | 1     |
+U_EX_MEM_REG/valbout_5_and0001(U_EX_MEM_REG/valbout_5_and00011:O)            | NONE(U_EX_MEM_REG/valbout_5)     | 1     |
+U_EX_MEM_REG/valbout_6_and0000(U_EX_MEM_REG/valbout_6_and00001:O)            | NONE(U_EX_MEM_REG/valbout_6)     | 1     |
+U_EX_MEM_REG/valbout_6_and0001(U_EX_MEM_REG/valbout_6_and00011:O)            | NONE(U_EX_MEM_REG/valbout_6)     | 1     |
+U_EX_MEM_REG/valbout_7_and0000(U_EX_MEM_REG/valbout_7_and00001:O)            | NONE(U_EX_MEM_REG/valbout_7)     | 1     |
+U_EX_MEM_REG/valbout_7_and0001(U_EX_MEM_REG/valbout_7_and00011:O)            | NONE(U_EX_MEM_REG/valbout_7)     | 1     |
+U_EX_MEM_REG/valbout_8_and0000(U_EX_MEM_REG/valbout_8_and00001:O)            | NONE(U_EX_MEM_REG/valbout_8)     | 1     |
+U_EX_MEM_REG/valbout_8_and0001(U_EX_MEM_REG/valbout_8_and00011:O)            | NONE(U_EX_MEM_REG/valbout_8)     | 1     |
+U_EX_MEM_REG/valbout_9_and0000(U_EX_MEM_REG/valbout_9_and00001:O)            | NONE(U_EX_MEM_REG/valbout_9)     | 1     |
+U_EX_MEM_REG/valbout_9_and0001(U_EX_MEM_REG/valbout_9_and00011:O)            | NONE(U_EX_MEM_REG/valbout_9)     | 1     |
+U_ID_DEST_REG/destoutfir_0_and0000(U_ID_DEST_REG/destoutfir_0_and00001:O)    | NONE(U_ID_DEST_REG/destoutfir_0) | 1     |
+U_ID_DEST_REG/destoutfir_0_and0001(U_ID_DEST_REG/destoutfir_0_and00011:O)    | NONE(U_ID_DEST_REG/destoutfir_0) | 1     |
+U_ID_DEST_REG/destoutfir_1_and0000(U_ID_DEST_REG/destoutfir_1_and00001:O)    | NONE(U_ID_DEST_REG/destoutfir_1) | 1     |
+U_ID_DEST_REG/destoutfir_1_and0001(U_ID_DEST_REG/destoutfir_1_and00011:O)    | NONE(U_ID_DEST_REG/destoutfir_1) | 1     |
+U_ID_DEST_REG/destoutfir_2_and0000(U_ID_DEST_REG/destoutfir_2_and00001:O)    | NONE(U_ID_DEST_REG/destoutfir_2) | 1     |
+U_ID_DEST_REG/destoutfir_2_and0001(U_ID_DEST_REG/destoutfir_2_and00011:O)    | NONE(U_ID_DEST_REG/destoutfir_2) | 1     |
+U_ID_DEST_REG/destoutsec_0_and0000(U_ID_DEST_REG/destoutsec_0_and00001:O)    | NONE(U_ID_DEST_REG/destoutsec_0) | 1     |
+U_ID_DEST_REG/destoutsec_0_and0001(U_ID_DEST_REG/destoutsec_0_and00011:O)    | NONE(U_ID_DEST_REG/destoutsec_0) | 1     |
+U_ID_DEST_REG/destoutsec_1_and0000(U_ID_DEST_REG/destoutsec_1_and00001:O)    | NONE(U_ID_DEST_REG/destoutsec_1) | 1     |
+U_ID_DEST_REG/destoutsec_1_and0001(U_ID_DEST_REG/destoutsec_1_and00011:O)    | NONE(U_ID_DEST_REG/destoutsec_1) | 1     |
+U_ID_DEST_REG/destoutsec_2_and0000(U_ID_DEST_REG/destoutsec_2_and00001:O)    | NONE(U_ID_DEST_REG/destoutsec_2) | 1     |
+U_ID_DEST_REG/destoutsec_2_and0001(U_ID_DEST_REG/destoutsec_2_and00011:O)    | NONE(U_ID_DEST_REG/destoutsec_2) | 1     |
+U_ID_DEST_REG/destoutthi_0_and0000(U_ID_DEST_REG/destoutthi_0_and00001:O)    | NONE(U_ID_DEST_REG/destoutthi_0) | 1     |
+U_ID_DEST_REG/destoutthi_0_and0001(U_ID_DEST_REG/destoutthi_0_and00011:O)    | NONE(U_ID_DEST_REG/destoutthi_0) | 1     |
+U_ID_DEST_REG/destoutthi_1_and0000(U_ID_DEST_REG/destoutthi_1_and00001:O)    | NONE(U_ID_DEST_REG/destoutthi_1) | 1     |
+U_ID_DEST_REG/destoutthi_1_and0001(U_ID_DEST_REG/destoutthi_1_and00011:O)    | NONE(U_ID_DEST_REG/destoutthi_1) | 1     |
+U_ID_DEST_REG/destoutthi_2_and0000(U_ID_DEST_REG/destoutthi_2_and00001:O)    | NONE(U_ID_DEST_REG/destoutthi_2) | 1     |
+U_ID_DEST_REG/destoutthi_2_and0001(U_ID_DEST_REG/destoutthi_2_and00011:O)    | NONE(U_ID_DEST_REG/destoutthi_2) | 1     |
+U_ID_EX_REG/hazard1(U_ID_EX_REG/hazard1:Q)                                   | NONE(U_excute_control/muxout_1_0)| 1     |
+U_ID_EX_REG/hazard2(U_ID_EX_REG/hazard2:Q)                                   | NONE(U_excute_control/muxout_3_1)| 1     |
+U_ID_EX_REG/offsetout_0_and0000(U_ID_EX_REG/offsetout_0_and00001:O)          | NONE(U_ID_EX_REG/offsetout_0)    | 1     |
+U_ID_EX_REG/offsetout_0_and0001(U_ID_EX_REG/offsetout_0_and00011:O)          | NONE(U_ID_EX_REG/offsetout_0)    | 1     |
+U_ID_EX_REG/offsetout_10_and0000(U_ID_EX_REG/offsetout_10_and00001:O)        | NONE(U_ID_EX_REG/offsetout_10)   | 1     |
+U_ID_EX_REG/offsetout_10_and0001(U_ID_EX_REG/offsetout_10_and00011:O)        | NONE(U_ID_EX_REG/offsetout_10)   | 1     |
+U_ID_EX_REG/offsetout_11_and0000(U_ID_EX_REG/offsetout_11_and00001:O)        | NONE(U_ID_EX_REG/offsetout_11)   | 1     |
+U_ID_EX_REG/offsetout_11_and0001(U_ID_EX_REG/offsetout_11_and00011:O)        | NONE(U_ID_EX_REG/offsetout_11)   | 1     |
+U_ID_EX_REG/offsetout_12_and0000(U_ID_EX_REG/offsetout_12_and00001:O)        | NONE(U_ID_EX_REG/offsetout_12)   | 1     |
+U_ID_EX_REG/offsetout_12_and0001(U_ID_EX_REG/offsetout_12_and00011:O)        | NONE(U_ID_EX_REG/offsetout_12)   | 1     |
+U_ID_EX_REG/offsetout_13_and0000(U_ID_EX_REG/offsetout_13_and00001:O)        | NONE(U_ID_EX_REG/offsetout_13)   | 1     |
+U_ID_EX_REG/offsetout_13_and0001(U_ID_EX_REG/offsetout_13_and00011:O)        | NONE(U_ID_EX_REG/offsetout_13)   | 1     |
+U_ID_EX_REG/offsetout_14_and0000(U_ID_EX_REG/offsetout_14_and00001:O)        | NONE(U_ID_EX_REG/offsetout_14)   | 1     |
+U_ID_EX_REG/offsetout_14_and0001(U_ID_EX_REG/offsetout_14_and00011:O)        | NONE(U_ID_EX_REG/offsetout_14)   | 1     |
+U_ID_EX_REG/offsetout_15_and0000(U_ID_EX_REG/offsetout_15_and00001:O)        | NONE(U_ID_EX_REG/offsetout_15)   | 1     |
+U_ID_EX_REG/offsetout_15_and0001(U_ID_EX_REG/offsetout_15_and00011:O)        | NONE(U_ID_EX_REG/offsetout_15)   | 1     |
+U_ID_EX_REG/offsetout_1_and0000(U_ID_EX_REG/offsetout_1_and00001:O)          | NONE(U_ID_EX_REG/offsetout_1)    | 1     |
+U_ID_EX_REG/offsetout_1_and0001(U_ID_EX_REG/offsetout_1_and00011:O)          | NONE(U_ID_EX_REG/offsetout_1)    | 1     |
+U_ID_EX_REG/offsetout_2_and0000(U_ID_EX_REG/offsetout_2_and00001:O)          | NONE(U_ID_EX_REG/offsetout_2)    | 1     |
+U_ID_EX_REG/offsetout_2_and0001(U_ID_EX_REG/offsetout_2_and00011:O)          | NONE(U_ID_EX_REG/offsetout_2)    | 1     |
+U_ID_EX_REG/offsetout_3_and0000(U_ID_EX_REG/offsetout_3_and00001:O)          | NONE(U_ID_EX_REG/offsetout_3)    | 1     |
+U_ID_EX_REG/offsetout_3_and0001(U_ID_EX_REG/offsetout_3_and00011:O)          | NONE(U_ID_EX_REG/offsetout_3)    | 1     |
+U_ID_EX_REG/offsetout_4_and0000(U_ID_EX_REG/offsetout_4_and00001:O)          | NONE(U_ID_EX_REG/offsetout_4)    | 1     |
+U_ID_EX_REG/offsetout_4_and0001(U_ID_EX_REG/offsetout_4_and00011:O)          | NONE(U_ID_EX_REG/offsetout_4)    | 1     |
+U_ID_EX_REG/offsetout_5_and0000(U_ID_EX_REG/offsetout_5_and00001:O)          | NONE(U_ID_EX_REG/offsetout_5)    | 1     |
+U_ID_EX_REG/offsetout_5_and0001(U_ID_EX_REG/offsetout_5_and00011:O)          | NONE(U_ID_EX_REG/offsetout_5)    | 1     |
+U_ID_EX_REG/offsetout_6_and0000(U_ID_EX_REG/offsetout_6_and00001:O)          | NONE(U_ID_EX_REG/offsetout_6)    | 1     |
+U_ID_EX_REG/offsetout_6_and0001(U_ID_EX_REG/offsetout_6_and00011:O)          | NONE(U_ID_EX_REG/offsetout_6)    | 1     |
+U_ID_EX_REG/offsetout_7_and0000(U_ID_EX_REG/offsetout_7_and00001:O)          | NONE(U_ID_EX_REG/offsetout_7)    | 1     |
+U_ID_EX_REG/offsetout_7_and0001(U_ID_EX_REG/offsetout_7_and00011:O)          | NONE(U_ID_EX_REG/offsetout_7)    | 1     |
+U_ID_EX_REG/offsetout_8_and0000(U_ID_EX_REG/offsetout_8_and00001:O)          | NONE(U_ID_EX_REG/offsetout_8)    | 1     |
+U_ID_EX_REG/offsetout_8_and0001(U_ID_EX_REG/offsetout_8_and00011:O)          | NONE(U_ID_EX_REG/offsetout_8)    | 1     |
+U_ID_EX_REG/offsetout_9_and0000(U_ID_EX_REG/offsetout_9_and00001:O)          | NONE(U_ID_EX_REG/offsetout_9)    | 1     |
+U_ID_EX_REG/offsetout_9_and0001(U_ID_EX_REG/offsetout_9_and00011:O)          | NONE(U_ID_EX_REG/offsetout_9)    | 1     |
+U_MEM_WB_REG/firstout_0_and0000(U_MEM_WB_REG/firstout_0_and00001:O)          | NONE(U_MEM_WB_REG/firstout_0)    | 1     |
+U_MEM_WB_REG/firstout_0_and0001(U_MEM_WB_REG/firstout_0_and00011:O)          | NONE(U_MEM_WB_REG/firstout_0)    | 1     |
+U_MEM_WB_REG/firstout_10_and0000(U_MEM_WB_REG/firstout_10_and00001:O)        | NONE(U_MEM_WB_REG/firstout_10)   | 1     |
+U_MEM_WB_REG/firstout_10_and0001(U_MEM_WB_REG/firstout_10_and00011:O)        | NONE(U_MEM_WB_REG/firstout_10)   | 1     |
+U_MEM_WB_REG/firstout_11_and0000(U_MEM_WB_REG/firstout_11_and00001:O)        | NONE(U_MEM_WB_REG/firstout_11)   | 1     |
+U_MEM_WB_REG/firstout_11_and0001(U_MEM_WB_REG/firstout_11_and00011:O)        | NONE(U_MEM_WB_REG/firstout_11)   | 1     |
+U_MEM_WB_REG/firstout_12_and0000(U_MEM_WB_REG/firstout_12_and00001:O)        | NONE(U_MEM_WB_REG/firstout_12)   | 1     |
+U_MEM_WB_REG/firstout_12_and0001(U_MEM_WB_REG/firstout_12_and00011:O)        | NONE(U_MEM_WB_REG/firstout_12)   | 1     |
+U_MEM_WB_REG/firstout_13_and0000(U_MEM_WB_REG/firstout_13_and00001:O)        | NONE(U_MEM_WB_REG/firstout_13)   | 1     |
+U_MEM_WB_REG/firstout_13_and0001(U_MEM_WB_REG/firstout_13_and00011:O)        | NONE(U_MEM_WB_REG/firstout_13)   | 1     |
+U_MEM_WB_REG/firstout_14_and0000(U_MEM_WB_REG/firstout_14_and00001:O)        | NONE(U_MEM_WB_REG/firstout_14)   | 1     |
+U_MEM_WB_REG/firstout_14_and0001(U_MEM_WB_REG/firstout_14_and00011:O)        | NONE(U_MEM_WB_REG/firstout_14)   | 1     |
+U_MEM_WB_REG/firstout_15_and0000(U_MEM_WB_REG/firstout_15_and00001:O)        | NONE(U_MEM_WB_REG/firstout_15)   | 1     |
+U_MEM_WB_REG/firstout_15_and0001(U_MEM_WB_REG/firstout_15_and00011:O)        | NONE(U_MEM_WB_REG/firstout_15)   | 1     |
+U_MEM_WB_REG/firstout_16_and0000(U_MEM_WB_REG/firstout_16_and00001:O)        | NONE(U_MEM_WB_REG/firstout_16)   | 1     |
+U_MEM_WB_REG/firstout_16_and0001(U_MEM_WB_REG/firstout_16_and00011:O)        | NONE(U_MEM_WB_REG/firstout_16)   | 1     |
+U_MEM_WB_REG/firstout_17_and0000(U_MEM_WB_REG/firstout_17_and00001:O)        | NONE(U_MEM_WB_REG/firstout_17)   | 1     |
+U_MEM_WB_REG/firstout_17_and0001(U_MEM_WB_REG/firstout_17_and00011:O)        | NONE(U_MEM_WB_REG/firstout_17)   | 1     |
+U_MEM_WB_REG/firstout_18_and0000(U_MEM_WB_REG/firstout_18_and00001:O)        | NONE(U_MEM_WB_REG/firstout_18)   | 1     |
+U_MEM_WB_REG/firstout_18_and0001(U_MEM_WB_REG/firstout_18_and00011:O)        | NONE(U_MEM_WB_REG/firstout_18)   | 1     |
+U_MEM_WB_REG/firstout_19_and0000(U_MEM_WB_REG/firstout_19_and00001:O)        | NONE(U_MEM_WB_REG/firstout_19)   | 1     |
+U_MEM_WB_REG/firstout_19_and0001(U_MEM_WB_REG/firstout_19_and00011:O)        | NONE(U_MEM_WB_REG/firstout_19)   | 1     |
+U_MEM_WB_REG/firstout_1_and0000(U_MEM_WB_REG/firstout_1_and00001:O)          | NONE(U_MEM_WB_REG/firstout_1)    | 1     |
+U_MEM_WB_REG/firstout_1_and0001(U_MEM_WB_REG/firstout_1_and00011:O)          | NONE(U_MEM_WB_REG/firstout_1)    | 1     |
+U_MEM_WB_REG/firstout_20_and0000(U_MEM_WB_REG/firstout_20_and00001:O)        | NONE(U_MEM_WB_REG/firstout_20)   | 1     |
+U_MEM_WB_REG/firstout_20_and0001(U_MEM_WB_REG/firstout_20_and00011:O)        | NONE(U_MEM_WB_REG/firstout_20)   | 1     |
+U_MEM_WB_REG/firstout_21_and0000(U_MEM_WB_REG/firstout_21_and00001:O)        | NONE(U_MEM_WB_REG/firstout_21)   | 1     |
+U_MEM_WB_REG/firstout_21_and0001(U_MEM_WB_REG/firstout_21_and00011:O)        | NONE(U_MEM_WB_REG/firstout_21)   | 1     |
+U_MEM_WB_REG/firstout_22_and0000(U_MEM_WB_REG/firstout_22_and00001:O)        | NONE(U_MEM_WB_REG/firstout_22)   | 1     |
+U_MEM_WB_REG/firstout_22_and0001(U_MEM_WB_REG/firstout_22_and00011:O)        | NONE(U_MEM_WB_REG/firstout_22)   | 1     |
+U_MEM_WB_REG/firstout_23_and0000(U_MEM_WB_REG/firstout_23_and00001:O)        | NONE(U_MEM_WB_REG/firstout_23)   | 1     |
+U_MEM_WB_REG/firstout_23_and0001(U_MEM_WB_REG/firstout_23_and00011:O)        | NONE(U_MEM_WB_REG/firstout_23)   | 1     |
+U_MEM_WB_REG/firstout_24_and0000(U_MEM_WB_REG/firstout_24_and00001:O)        | NONE(U_MEM_WB_REG/firstout_24)   | 1     |
+U_MEM_WB_REG/firstout_24_and0001(U_MEM_WB_REG/firstout_24_and00011:O)        | NONE(U_MEM_WB_REG/firstout_24)   | 1     |
+U_MEM_WB_REG/firstout_2_and0000(U_MEM_WB_REG/firstout_2_and00001:O)          | NONE(U_MEM_WB_REG/firstout_2)    | 1     |
+U_MEM_WB_REG/firstout_2_and0001(U_MEM_WB_REG/firstout_2_and00011:O)          | NONE(U_MEM_WB_REG/firstout_2)    | 1     |
+U_MEM_WB_REG/firstout_3_and0000(U_MEM_WB_REG/firstout_3_and00001:O)          | NONE(U_MEM_WB_REG/firstout_3)    | 1     |
+U_MEM_WB_REG/firstout_3_and0001(U_MEM_WB_REG/firstout_3_and00011:O)          | NONE(U_MEM_WB_REG/firstout_3)    | 1     |
+U_MEM_WB_REG/firstout_4_and0000(U_MEM_WB_REG/firstout_4_and00001:O)          | NONE(U_MEM_WB_REG/firstout_4)    | 1     |
+U_MEM_WB_REG/firstout_4_and0001(U_MEM_WB_REG/firstout_4_and00011:O)          | NONE(U_MEM_WB_REG/firstout_4)    | 1     |
+U_MEM_WB_REG/firstout_5_and0000(U_MEM_WB_REG/firstout_5_and00001:O)          | NONE(U_MEM_WB_REG/firstout_5)    | 1     |
+U_MEM_WB_REG/firstout_5_and0001(U_MEM_WB_REG/firstout_5_and00011:O)          | NONE(U_MEM_WB_REG/firstout_5)    | 1     |
+U_MEM_WB_REG/firstout_6_and0000(U_MEM_WB_REG/firstout_6_and00001:O)          | NONE(U_MEM_WB_REG/firstout_6)    | 1     |
+U_MEM_WB_REG/firstout_6_and0001(U_MEM_WB_REG/firstout_6_and00011:O)          | NONE(U_MEM_WB_REG/firstout_6)    | 1     |
+U_MEM_WB_REG/firstout_7_and0000(U_MEM_WB_REG/firstout_7_and00001:O)          | NONE(U_MEM_WB_REG/firstout_7)    | 1     |
+U_MEM_WB_REG/firstout_7_and0001(U_MEM_WB_REG/firstout_7_and00011:O)          | NONE(U_MEM_WB_REG/firstout_7)    | 1     |
+U_MEM_WB_REG/firstout_8_and0000(U_MEM_WB_REG/firstout_8_and00001:O)          | NONE(U_MEM_WB_REG/firstout_8)    | 1     |
+U_MEM_WB_REG/firstout_8_and0001(U_MEM_WB_REG/firstout_8_and00011:O)          | NONE(U_MEM_WB_REG/firstout_8)    | 1     |
+U_MEM_WB_REG/firstout_9_and0000(U_MEM_WB_REG/firstout_9_and00001:O)          | NONE(U_MEM_WB_REG/firstout_9)    | 1     |
+U_MEM_WB_REG/firstout_9_and0001(U_MEM_WB_REG/firstout_9_and00011:O)          | NONE(U_MEM_WB_REG/firstout_9)    | 1     |
+U_MEM_WB_REG/opcodeout_0_and0000(U_MEM_WB_REG/opcodeout_0_and00001:O)        | NONE(U_MEM_WB_REG/opcodeout_0)   | 1     |
+U_MEM_WB_REG/opcodeout_0_and0001(U_MEM_WB_REG/opcodeout_0_and00011:O)        | NONE(U_MEM_WB_REG/opcodeout_0)   | 1     |
+U_MEM_WB_REG/opcodeout_1_and0000(U_MEM_WB_REG/opcodeout_1_and00001:O)        | NONE(U_MEM_WB_REG/opcodeout_1)   | 1     |
+U_MEM_WB_REG/opcodeout_1_and0001(U_MEM_WB_REG/opcodeout_1_and00011:O)        | NONE(U_MEM_WB_REG/opcodeout_1)   | 1     |
+U_MEM_WB_REG/opcodeout_2_and0000(U_MEM_WB_REG/opcodeout_2_and00001:O)        | NONE(U_MEM_WB_REG/opcodeout_2)   | 1     |
+U_MEM_WB_REG/opcodeout_2_and0001(U_MEM_WB_REG/opcodeout_2_and00011:O)        | NONE(U_MEM_WB_REG/opcodeout_2)   | 1     |
+U_MEM_WB_REG/secondout_0_and0000(U_MEM_WB_REG/secondout_0_and00001:O)        | NONE(U_MEM_WB_REG/secondout_0)   | 1     |
+U_MEM_WB_REG/secondout_0_and0001(U_MEM_WB_REG/secondout_0_and00011:O)        | NONE(U_MEM_WB_REG/secondout_0)   | 1     |
+U_MEM_WB_REG/secondout_10_and0000(U_MEM_WB_REG/secondout_10_and00001:O)      | NONE(U_MEM_WB_REG/secondout_10)  | 1     |
+U_MEM_WB_REG/secondout_10_and0001(U_MEM_WB_REG/secondout_10_and00011:O)      | NONE(U_MEM_WB_REG/secondout_10)  | 1     |
+U_MEM_WB_REG/secondout_11_and0000(U_MEM_WB_REG/secondout_11_and00001:O)      | NONE(U_MEM_WB_REG/secondout_11)  | 1     |
+U_MEM_WB_REG/secondout_11_and0001(U_MEM_WB_REG/secondout_11_and00011:O)      | NONE(U_MEM_WB_REG/secondout_11)  | 1     |
+U_MEM_WB_REG/secondout_12_and0000(U_MEM_WB_REG/secondout_12_and00001:O)      | NONE(U_MEM_WB_REG/secondout_12)  | 1     |
+U_MEM_WB_REG/secondout_12_and0001(U_MEM_WB_REG/secondout_12_and00011:O)      | NONE(U_MEM_WB_REG/secondout_12)  | 1     |
+U_MEM_WB_REG/secondout_13_and0000(U_MEM_WB_REG/secondout_13_and00001:O)      | NONE(U_MEM_WB_REG/secondout_13)  | 1     |
+U_MEM_WB_REG/secondout_13_and0001(U_MEM_WB_REG/secondout_13_and00011:O)      | NONE(U_MEM_WB_REG/secondout_13)  | 1     |
+U_MEM_WB_REG/secondout_14_and0000(U_MEM_WB_REG/secondout_14_and00001:O)      | NONE(U_MEM_WB_REG/secondout_14)  | 1     |
+U_MEM_WB_REG/secondout_14_and0001(U_MEM_WB_REG/secondout_14_and00011:O)      | NONE(U_MEM_WB_REG/secondout_14)  | 1     |
+U_MEM_WB_REG/secondout_15_and0000(U_MEM_WB_REG/secondout_15_and00001:O)      | NONE(U_MEM_WB_REG/secondout_15)  | 1     |
+U_MEM_WB_REG/secondout_15_and0001(U_MEM_WB_REG/secondout_15_and00011:O)      | NONE(U_MEM_WB_REG/secondout_15)  | 1     |
+U_MEM_WB_REG/secondout_16_and0000(U_MEM_WB_REG/secondout_16_and00001:O)      | NONE(U_MEM_WB_REG/secondout_16)  | 1     |
+U_MEM_WB_REG/secondout_16_and0001(U_MEM_WB_REG/secondout_16_and00011:O)      | NONE(U_MEM_WB_REG/secondout_16)  | 1     |
+U_MEM_WB_REG/secondout_17_and0000(U_MEM_WB_REG/secondout_17_and00001:O)      | NONE(U_MEM_WB_REG/secondout_17)  | 1     |
+U_MEM_WB_REG/secondout_17_and0001(U_MEM_WB_REG/secondout_17_and00011:O)      | NONE(U_MEM_WB_REG/secondout_17)  | 1     |
+U_MEM_WB_REG/secondout_18_and0000(U_MEM_WB_REG/secondout_18_and00001:O)      | NONE(U_MEM_WB_REG/secondout_18)  | 1     |
+U_MEM_WB_REG/secondout_18_and0001(U_MEM_WB_REG/secondout_18_and00011:O)      | NONE(U_MEM_WB_REG/secondout_18)  | 1     |
+U_MEM_WB_REG/secondout_19_and0000(U_MEM_WB_REG/secondout_19_and00001:O)      | NONE(U_MEM_WB_REG/secondout_19)  | 1     |
+U_MEM_WB_REG/secondout_19_and0001(U_MEM_WB_REG/secondout_19_and00011:O)      | NONE(U_MEM_WB_REG/secondout_19)  | 1     |
+U_MEM_WB_REG/secondout_1_and0000(U_MEM_WB_REG/secondout_1_and00001:O)        | NONE(U_MEM_WB_REG/secondout_1)   | 1     |
+U_MEM_WB_REG/secondout_1_and0001(U_MEM_WB_REG/secondout_1_and00011:O)        | NONE(U_MEM_WB_REG/secondout_1)   | 1     |
+U_MEM_WB_REG/secondout_20_and0000(U_MEM_WB_REG/secondout_20_and00001:O)      | NONE(U_MEM_WB_REG/secondout_20)  | 1     |
+U_MEM_WB_REG/secondout_20_and0001(U_MEM_WB_REG/secondout_20_and00011:O)      | NONE(U_MEM_WB_REG/secondout_20)  | 1     |
+U_MEM_WB_REG/secondout_21_and0000(U_MEM_WB_REG/secondout_21_and00001:O)      | NONE(U_MEM_WB_REG/secondout_21)  | 1     |
+U_MEM_WB_REG/secondout_21_and0001(U_MEM_WB_REG/secondout_21_and00011:O)      | NONE(U_MEM_WB_REG/secondout_21)  | 1     |
+U_MEM_WB_REG/secondout_22_and0000(U_MEM_WB_REG/secondout_22_and00001:O)      | NONE(U_MEM_WB_REG/secondout_22)  | 1     |
+U_MEM_WB_REG/secondout_22_and0001(U_MEM_WB_REG/secondout_22_and00011:O)      | NONE(U_MEM_WB_REG/secondout_22)  | 1     |
+U_MEM_WB_REG/secondout_23_and0000(U_MEM_WB_REG/secondout_23_and00001:O)      | NONE(U_MEM_WB_REG/secondout_23)  | 1     |
+U_MEM_WB_REG/secondout_23_and0001(U_MEM_WB_REG/secondout_23_and00011:O)      | NONE(U_MEM_WB_REG/secondout_23)  | 1     |
+U_MEM_WB_REG/secondout_24_and0000(U_MEM_WB_REG/secondout_24_and00001:O)      | NONE(U_MEM_WB_REG/secondout_24)  | 1     |
+U_MEM_WB_REG/secondout_24_and0001(U_MEM_WB_REG/secondout_24_and00011:O)      | NONE(U_MEM_WB_REG/secondout_24)  | 1     |
+U_MEM_WB_REG/secondout_2_and0000(U_MEM_WB_REG/secondout_2_and00001:O)        | NONE(U_MEM_WB_REG/secondout_2)   | 1     |
+U_MEM_WB_REG/secondout_2_and0001(U_MEM_WB_REG/secondout_2_and00011:O)        | NONE(U_MEM_WB_REG/secondout_2)   | 1     |
+U_MEM_WB_REG/secondout_3_and0000(U_MEM_WB_REG/secondout_3_and00001:O)        | NONE(U_MEM_WB_REG/secondout_3)   | 1     |
+U_MEM_WB_REG/secondout_3_and0001(U_MEM_WB_REG/secondout_3_and00011:O)        | NONE(U_MEM_WB_REG/secondout_3)   | 1     |
+U_MEM_WB_REG/secondout_4_and0000(U_MEM_WB_REG/secondout_4_and00001:O)        | NONE(U_MEM_WB_REG/secondout_4)   | 1     |
+U_MEM_WB_REG/secondout_4_and0001(U_MEM_WB_REG/secondout_4_and00011:O)        | NONE(U_MEM_WB_REG/secondout_4)   | 1     |
+U_MEM_WB_REG/secondout_5_and0000(U_MEM_WB_REG/secondout_5_and00001:O)        | NONE(U_MEM_WB_REG/secondout_5)   | 1     |
+U_MEM_WB_REG/secondout_5_and0001(U_MEM_WB_REG/secondout_5_and00011:O)        | NONE(U_MEM_WB_REG/secondout_5)   | 1     |
+U_MEM_WB_REG/secondout_6_and0000(U_MEM_WB_REG/secondout_6_and00001:O)        | NONE(U_MEM_WB_REG/secondout_6)   | 1     |
+U_MEM_WB_REG/secondout_6_and0001(U_MEM_WB_REG/secondout_6_and00011:O)        | NONE(U_MEM_WB_REG/secondout_6)   | 1     |
+U_MEM_WB_REG/secondout_7_and0000(U_MEM_WB_REG/secondout_7_and00001:O)        | NONE(U_MEM_WB_REG/secondout_7)   | 1     |
+U_MEM_WB_REG/secondout_7_and0001(U_MEM_WB_REG/secondout_7_and00011:O)        | NONE(U_MEM_WB_REG/secondout_7)   | 1     |
+U_MEM_WB_REG/secondout_8_and0000(U_MEM_WB_REG/secondout_8_and00001:O)        | NONE(U_MEM_WB_REG/secondout_8)   | 1     |
+U_MEM_WB_REG/secondout_8_and0001(U_MEM_WB_REG/secondout_8_and00011:O)        | NONE(U_MEM_WB_REG/secondout_8)   | 1     |
+U_MEM_WB_REG/secondout_9_and0000(U_MEM_WB_REG/secondout_9_and00001:O)        | NONE(U_MEM_WB_REG/secondout_9)   | 1     |
+U_MEM_WB_REG/secondout_9_and0001(U_MEM_WB_REG/secondout_9_and00011:O)        | NONE(U_MEM_WB_REG/secondout_9)   | 1     |
+U_excute_control/muxout_1_1__and0000(U_excute_control/muxout_1_1__and00001:O)| NONE(U_excute_control/muxout_1_1)| 1     |
+U_excute_control/muxout_2_Q_0_or0000(U_excute_control/muxout_2_Q_0_or00001:O)| NONE(U_excute_control/muxout_2_0)| 1     |
+U_excute_control/muxout_2_Q_1_or0000(U_excute_control/muxout_2_Q_1_or00001:O)| NONE(U_excute_control/muxout_2_1)| 1     |
+U_excute_control/muxout_2_or0000(U_excute_control/muxout_2_or00001:O)        | NONE(U_excute_control/muxout_2_1)| 1     |
+U_excute_control/muxout_2_or0001(U_excute_control/muxout_2_or00011:O)        | NONE(U_excute_control/muxout_2_0)| 1     |
+U_excute_control/muxout_3_Q_0_or0000(U_excute_control/muxout_3_Q_0_or00001:O)| NONE(U_excute_control/muxout_3_0)| 1     |
+U_excute_control/muxout_3_or0000(U_excute_control/muxout_3_or00001:O)        | NONE(U_excute_control/muxout_3_1)| 1     |
+-----------------------------------------------------------------------------+----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.870ns (Maximum Frequency: 112.740MHz)
+   Minimum input arrival time before clock: 9.119ns
+   Maximum output required time after clock: 10.299ns
+   Maximum combinational path delay: 11.151ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 8.870ns (frequency: 112.740MHz)
+  Total number of paths / destination ports: 11957 / 1160
+-------------------------------------------------------------------------
+Delay:               8.870ns (Levels of Logic = 30)
+  Source:            U_MEM_WB_REG/secondout_0 (FF)
+  Destination:       U_EX_MEM_REG/aluresultout_24 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: U_MEM_WB_REG/secondout_0 to U_EX_MEM_REG/aluresultout_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             2   0.591   0.526  U_MEM_WB_REG/secondout_0 (U_MEM_WB_REG/secondout_0)
+     LUT3:I1->O            5   0.704   0.637  U_WB_MUX/Mmux_muxoutput11 (U_WB_MUX/Mmux_muxoutput)
+     LUT4:I3->O            1   0.704   0.000  U_EX_MUX_2/muxoutput<0>2 (U_EX_MUX_2/muxoutput<0>1)
+     MUXF5:I0->O           2   0.321   0.622  U_EX_MUX_2/muxoutput<0>_f5 (EX_MUX_OUT_2<0>)
+     LUT2:I0->O            1   0.704   0.000  U_EX_ALU/Madd_O_addsub0000_lut<0> (U_EX_ALU/Madd_O_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  U_EX_ALU/Madd_O_addsub0000_cy<0> (U_EX_ALU/Madd_O_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<1> (U_EX_ALU/Madd_O_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<2> (U_EX_ALU/Madd_O_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<3> (U_EX_ALU/Madd_O_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<4> (U_EX_ALU/Madd_O_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<5> (U_EX_ALU/Madd_O_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<6> (U_EX_ALU/Madd_O_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<7> (U_EX_ALU/Madd_O_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<8> (U_EX_ALU/Madd_O_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<9> (U_EX_ALU/Madd_O_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<10> (U_EX_ALU/Madd_O_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<11> (U_EX_ALU/Madd_O_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<12> (U_EX_ALU/Madd_O_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<13> (U_EX_ALU/Madd_O_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<14> (U_EX_ALU/Madd_O_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<15> (U_EX_ALU/Madd_O_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<16> (U_EX_ALU/Madd_O_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<17> (U_EX_ALU/Madd_O_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<18> (U_EX_ALU/Madd_O_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<19> (U_EX_ALU/Madd_O_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<20> (U_EX_ALU/Madd_O_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<21> (U_EX_ALU/Madd_O_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<22> (U_EX_ALU/Madd_O_addsub0000_cy<22>)
+     MUXCY:CI->O           0   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<23> (U_EX_ALU/Madd_O_addsub0000_cy<23>)
+     XORCY:CI->O           1   0.804   0.424  U_EX_ALU/Madd_O_addsub0000_xor<24> (U_EX_ALU/O_addsub0000<24>)
+     LUT4:I3->O            1   0.704   0.000  U_EX_ALU/Mmux_O34 (ALUout<24>)
+     FDCP:D                    0.308          U_EX_MEM_REG/aluresultout_24
+    ----------------------------------------
+    Total                      8.870ns (6.661ns logic, 2.209ns route)
+                                       (75.1% logic, 24.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reset'
+  Clock period: 2.279ns (frequency: 438.789MHz)
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Delay:               2.279ns (Levels of Logic = 1)
+  Source:            U_REG_bank/reg_6_7 (LATCH)
+  Destination:       U_REG_bank/reg_6_7 (LATCH)
+  Source Clock:      reset rising
+  Destination Clock: reset rising
+
+  Data Path: U_REG_bank/reg_6_7 to U_REG_bank/reg_6_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            4   0.676   0.591  U_REG_bank/reg_6_7 (U_REG_bank/reg_6_7)
+     LUT4:I3->O            1   0.704   0.000  U_REG_bank/reg_6_mux0001<7>1 (U_REG_bank/reg_6_mux0001<7>)
+     LDE_1:D                   0.308          U_REG_bank/reg_6_7
+    ----------------------------------------
+    Total                      2.279ns (1.688ns logic, 0.591ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_memory_control/memR_W_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.815ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_memory_control/memR_W (LATCH)
+  Destination Clock: U_memory_control/memR_W_not0001 falling
+
+  Data Path: reset to U_memory_control/memR_W
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.585  reset_IBUF (reset_IBUF1)
+     LUT4:I0->O            1   0.704   0.000  U_memory_control/memR_W_mux00032 (U_memory_control/memR_W_mux0003)
+     LD:D                      0.308          U_memory_control/memR_W
+    ----------------------------------------
+    Total                      3.815ns (2.230ns logic, 1.585ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_write_back_control/muxout_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.815ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_write_back_control/muxout (LATCH)
+  Destination Clock: U_write_back_control/muxout_not0001 falling
+
+  Data Path: reset to U_write_back_control/muxout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.585  reset_IBUF (reset_IBUF1)
+     LUT4:I0->O            1   0.704   0.000  U_write_back_control/muxout_mux00021 (U_write_back_control/muxout_mux0002)
+     LD:D                      0.308          U_write_back_control/muxout
+    ----------------------------------------
+    Total                      3.815ns (2.230ns logic, 1.585ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 2784 / 635
+-------------------------------------------------------------------------
+Offset:              9.119ns (Levels of Logic = 30)
+  Source:            reset (PAD)
+  Destination:       U_EX_MEM_REG/aluresultout_24 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to U_EX_MEM_REG/aluresultout_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.489  reset_IBUF (reset_IBUF1)
+     LUT4:I1->O            1   0.704   0.000  U_EX_MUX_2/muxoutput<0>1 (U_EX_MUX_2/muxoutput<0>)
+     MUXF5:I1->O           2   0.321   0.622  U_EX_MUX_2/muxoutput<0>_f5 (EX_MUX_OUT_2<0>)
+     LUT2:I0->O            1   0.704   0.000  U_EX_ALU/Madd_O_addsub0000_lut<0> (U_EX_ALU/Madd_O_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  U_EX_ALU/Madd_O_addsub0000_cy<0> (U_EX_ALU/Madd_O_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<1> (U_EX_ALU/Madd_O_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<2> (U_EX_ALU/Madd_O_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<3> (U_EX_ALU/Madd_O_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<4> (U_EX_ALU/Madd_O_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<5> (U_EX_ALU/Madd_O_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<6> (U_EX_ALU/Madd_O_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<7> (U_EX_ALU/Madd_O_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<8> (U_EX_ALU/Madd_O_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<9> (U_EX_ALU/Madd_O_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<10> (U_EX_ALU/Madd_O_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<11> (U_EX_ALU/Madd_O_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<12> (U_EX_ALU/Madd_O_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<13> (U_EX_ALU/Madd_O_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<14> (U_EX_ALU/Madd_O_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<15> (U_EX_ALU/Madd_O_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<16> (U_EX_ALU/Madd_O_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<17> (U_EX_ALU/Madd_O_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<18> (U_EX_ALU/Madd_O_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<19> (U_EX_ALU/Madd_O_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<20> (U_EX_ALU/Madd_O_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<21> (U_EX_ALU/Madd_O_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<22> (U_EX_ALU/Madd_O_addsub0000_cy<22>)
+     MUXCY:CI->O           0   0.059   0.000  U_EX_ALU/Madd_O_addsub0000_cy<23> (U_EX_ALU/Madd_O_addsub0000_cy<23>)
+     XORCY:CI->O           1   0.804   0.424  U_EX_ALU/Madd_O_addsub0000_xor<24> (U_EX_ALU/O_addsub0000<24>)
+     LUT4:I3->O            1   0.704   0.000  U_EX_ALU/Mmux_O34 (ALUout<24>)
+     FDCP:D                    0.308          U_EX_MEM_REG/aluresultout_24
+    ----------------------------------------
+    Total                      9.119ns (6.584ns logic, 2.535ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset'
+  Total number of paths / destination ports: 100 / 50
+-------------------------------------------------------------------------
+Offset:              5.869ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_6_24 (LATCH)
+  Destination Clock: reset rising
+
+  Data Path: reset to U_REG_bank/reg_6_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.490  U_write_back_control/regen1 (REGen)
+     LUT4:I0->O            1   0.704   0.000  U_REG_bank/reg_7_mux0001<9>1 (U_REG_bank/reg_7_mux0001<9>)
+     LDE_1:D                   0.308          U_REG_bank/reg_7_9
+    ----------------------------------------
+    Total                      5.869ns (2.934ns logic, 2.935ns route)
+                                       (50.0% logic, 50.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_0_not00011'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_0_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_0_not00011 rising
+
+  Data Path: reset to U_REG_bank/reg_0_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE_1:GE                 0.555          U_REG_bank/reg_0_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_1_cmp_eq00001'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_1_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_1_cmp_eq00001 falling
+
+  Data Path: reset to U_REG_bank/reg_1_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE:GE                   0.555          U_REG_bank/reg_1_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_2_cmp_eq00001'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_2_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_2_cmp_eq00001 falling
+
+  Data Path: reset to U_REG_bank/reg_2_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE:GE                   0.555          U_REG_bank/reg_2_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_3_cmp_eq00001'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_3_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_3_cmp_eq00001 falling
+
+  Data Path: reset to U_REG_bank/reg_3_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE:GE                   0.555          U_REG_bank/reg_3_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_4_cmp_eq00001'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_4_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_4_cmp_eq00001 falling
+
+  Data Path: reset to U_REG_bank/reg_4_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE:GE                   0.555          U_REG_bank/reg_4_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U_REG_bank/reg_5_cmp_eq00001'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              5.237ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U_REG_bank/reg_5_24 (LATCH)
+  Destination Clock: U_REG_bank/reg_5_cmp_eq00001 falling
+
+  Data Path: reset to U_REG_bank/reg_5_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1249   1.218   1.445  reset_IBUF (reset_IBUF1)
+     LUT4:I2->O          200   0.704   1.315  U_write_back_control/regen1 (REGen)
+     LDCE:GE                   0.555          U_REG_bank/reg_5_24
+    ----------------------------------------
+    Total                      5.237ns (2.477ns logic, 2.760ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_1_cmp_eq00001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              6.885ns (Levels of Logic = 3)
+  Source:            U_REG_bank/reg_1_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_1_cmp_eq00001 falling
+
+  Data Path: U_REG_bank/reg_1_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.610  U_REG_bank/reg_1_7 (U_REG_bank/reg_1_7)
+     LUT2:I1->O            1   0.704   0.499  regvalue<7>11 (regvalue<7>11)
+     LUT4:I1->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      6.885ns (5.356ns logic, 1.529ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_3_cmp_eq00001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              8.000ns (Levels of Logic = 4)
+  Source:            U_REG_bank/reg_3_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_3_cmp_eq00001 falling
+
+  Data Path: U_REG_bank/reg_3_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.610  U_REG_bank/reg_3_7 (U_REG_bank/reg_3_7)
+     LUT4:I1->O            1   0.704   0.455  regvalue<7>1197_SW0_SW0 (N241)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      8.000ns (6.060ns logic, 1.940ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_4_cmp_eq00001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              9.159ns (Levels of Logic = 5)
+  Source:            U_REG_bank/reg_4_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_4_cmp_eq00001 falling
+
+  Data Path: U_REG_bank/reg_4_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.610  U_REG_bank/reg_4_7 (U_REG_bank/reg_4_7)
+     LUT2:I1->O            1   0.704   0.455  regvalue<7>116 (regvalue<7>116)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0_SW0 (N241)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      9.159ns (6.764ns logic, 2.395ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              10.299ns (Levels of Logic = 6)
+  Source:            U_REG_bank/reg_7_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      reset rising
+
+  Data Path: U_REG_bank/reg_7_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            4   0.676   0.622  U_REG_bank/reg_7_7 (U_REG_bank/reg_7_7)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>157_SW0 (N139)
+     LUT4:I2->O            1   0.704   0.424  regvalue<7>157 (regvalue<7>157)
+     LUT4:I3->O            1   0.704   0.455  regvalue<7>1197_SW0_SW0 (N241)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                     10.299ns (7.468ns logic, 2.831ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_5_cmp_eq00001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              9.053ns (Levels of Logic = 5)
+  Source:            U_REG_bank/reg_5_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_5_cmp_eq00001 falling
+
+  Data Path: U_REG_bank/reg_5_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.535  U_REG_bank/reg_5_7 (U_REG_bank/reg_5_7)
+     LUT4:I3->O            1   0.704   0.424  regvalue<7>157 (regvalue<7>157)
+     LUT4:I3->O            1   0.704   0.455  regvalue<7>1197_SW0_SW0 (N241)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      9.053ns (6.764ns logic, 2.289ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_2_cmp_eq00001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              6.766ns (Levels of Logic = 3)
+  Source:            U_REG_bank/reg_2_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_2_cmp_eq00001 falling
+
+  Data Path: U_REG_bank/reg_2_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             3   0.676   0.535  U_REG_bank/reg_2_7 (U_REG_bank/reg_2_7)
+     LUT4:I3->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      6.766ns (5.356ns logic, 1.410ns route)
+                                       (79.2% logic, 20.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U_REG_bank/reg_0_not00011'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              5.607ns (Levels of Logic = 2)
+  Source:            U_REG_bank/reg_0_7 (LATCH)
+  Destination:       regvalue<7> (PAD)
+  Source Clock:      U_REG_bank/reg_0_not00011 rising
+
+  Data Path: U_REG_bank/reg_0_7 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE_1:G->Q           3   0.676   0.535  U_REG_bank/reg_0_7 (U_REG_bank/reg_0_7)
+     LUT4:I3->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                      5.607ns (4.652ns logic, 0.955ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 80 / 8
+-------------------------------------------------------------------------
+Delay:               11.151ns (Levels of Logic = 7)
+  Source:            regnum6 (PAD)
+  Destination:       regvalue<7> (PAD)
+
+  Data Path: regnum6 to regvalue<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  regnum6_IBUF (regnum6_IBUF)
+     LUT4:I0->O            1   0.704   0.455  regvalue<7>157_SW0 (N139)
+     LUT4:I2->O            1   0.704   0.424  regvalue<7>157 (regvalue<7>157)
+     LUT4:I3->O            1   0.704   0.455  regvalue<7>1197_SW0_SW0 (N241)
+     LUT4:I2->O            1   0.704   0.455  regvalue<7>1197_SW0 (N1411)
+     LUT4:I2->O            1   0.704   0.420  regvalue<7>1197 (regvalue_7_OBUF)
+     OBUF:I->O                 3.272          regvalue_7_OBUF (regvalue<7>)
+    ----------------------------------------
+    Total                     11.151ns (8.010ns logic, 3.141ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.02 secs
+ 
+--> 
+
+Total memory usage is 306024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  496 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

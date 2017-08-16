@@ -1,0 +1,77 @@
+{C:/Users/lenovo/Documents/work/LC2K pipeline/memory_control.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/lenovo/Documents/work/LC2K pipeline/memory_control.vhd}
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity memory_control
+-- Compiling architecture bhv of memory_control
+
+} {} {}} {C:/Users/lenovo/Documents/work/LC2K pipeline/pipeline.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/lenovo/Documents/work/LC2K pipeline/pipeline.vhd}
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity adder
+-- Compiling architecture bhv of adder
+-- Compiling entity branch
+-- Compiling architecture bhv of branch
+-- Compiling entity mux4
+-- Compiling architecture bhv of mux4
+-- Compiling entity mux2
+-- Compiling architecture bhv of mux2
+-- Compiling entity muxr
+-- Compiling architecture bhv of muxr
+-- Compiling entity sext
+-- Compiling architecture bhv of sext
+-- Compiling entity reg
+-- Compiling architecture bhv of reg
+-- Compiling entity register_file
+-- Compiling architecture bhv of register_file
+-- Compiling entity LC2_ALU
+-- Compiling architecture bhv of LC2_ALU
+-- Compiling entity IF_ID_REG
+-- Compiling architecture bhv of IF_ID_REG
+-- Compiling entity ID_EX_REG
+-- Compiling architecture bhv of ID_EX_REG
+-- Compiling entity EX_MEM_REG
+-- Compiling architecture bhv of EX_MEM_REG
+-- Compiling entity MEM_WB_REG
+-- Compiling architecture bhv of MEM_WB_REG
+-- Compiling entity pipeline_all_tb
+-- Compiling architecture TB_ARCHITECTURE of pipeline_all_tb
+
+} {} {}} C:/Users/lenovo/Desktop/example/ram-1.vhd {1 {vcom -work work -2002 -explicit C:/Users/lenovo/Desktop/example/ram-1.vhd
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity data_mem
+-- Compiling architecture bhv of data_mem
+
+} {} {}} {C:/Users/lenovo/Documents/work/LC2K pipeline/write_back_control.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/lenovo/Documents/work/LC2K pipeline/write_back_control.vhd}
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity write_back_control
+-- Compiling architecture bhv of write_back_control
+
+} {} {}} {C:/Users/lenovo/Documents/work/LC2K pipeline/decode_control.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/lenovo/Documents/work/LC2K pipeline/decode_control.vhd}
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity decode_control
+-- Compiling architecture bhv of decode_control
+
+} {} {}}

@@ -1,0 +1,591 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\lenovo\Desktop
+Eadder
+Z0 w1418392128
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\lenovo\Documents
+Z6 8C:/Users/lenovo/Documents/LC2K.vhd
+Z7 FC:/Users/lenovo/Documents/LC2K.vhd
+l0
+L6
+V3OmANhQV5>mFdQGza0H391
+Z8 OV;C;10.0d;49
+32
+Z9 !s108 1418392130.043000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Documents/LC2K.vhd|
+Z11 !s107 C:/Users/lenovo/Documents/LC2K.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 `E[c3ccZQ1^VhE`TcQ6:O3
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 3OmANhQV5>mFdQGza0H391
+l13
+L12
+VMJSSN8^6`D;;LR23hTJA@1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 Z;08=1j]cHW?:OLIJnBo?1
+Eand_ent
+Z14 w1415695474
+R3
+R4
+R5
+Z15 8C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/and.vhd
+Z16 FC:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/and.vhd
+l0
+L11
+VALl:cRTglfIJ9Pi@>iQ6^1
+R8
+32
+Z17 !s108 1416918917.670000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/and.vhd|
+Z19 !s107 C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/and.vhd|
+R12
+R13
+!s100 R1nV200mfIE@B[ke70_n=2
+Abehav2
+R3
+R4
+Z20 DEx4 work 7 and_ent 0 22 ALl:cRTglfIJ9Pi@>iQ6^1
+l36
+L35
+V=GSmCGNfdCSnMfS`0On_G1
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 KJzPm@9o_R?0SICXTIIBL3
+Abehav1
+R3
+R4
+R20
+l21
+L20
+V7Enbl^Tk<=21QY_]9KVnB2
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 7b`TGE`RznTN5J=I>O8?71
+Ebranch
+Z21 w1418393105
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L6
+V>:J=mJnLz?4h6d383?1S50
+R8
+32
+Z22 !s108 1418393106.164000
+R10
+R11
+R12
+R13
+!s100 3IO0Q3:k;XSCQ91J5MzjL2
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 6 branch 0 22 >:J=mJnLz?4h6d383?1S50
+l15
+L14
+V2?6ScO0F^C6kfZFL?E`Rc1
+!s100 mHWTjFf>2QW[OE49RNLYz0
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Efsm
+R21
+R2
+R1
+R3
+R4
+R5
+R6
+R7
+l0
+L366
+VP@j<:2X>3XT2E;;NaoO8^0
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 3XLI_[]Mn0zjN2QX1gbO;3
+Afsm_arch
+R2
+R1
+R3
+R4
+DEx4 work 3 fsm 0 22 P@j<:2X>3XT2E;;NaoO8^0
+l397
+L385
+V:iVc>Pl^<fbo8`;zfELm42
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 ZHRi4gMzVFY69I:;i@4Wj0
+Elc2_all
+R21
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L714
+VNNzbd;6TgL5^aY[Ejb<Zn3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 lN^gz1kF1;BIU80G63jLV3
+Astr
+R1
+R2
+R3
+R4
+Z23 DEx4 work 7 lc2_all 0 22 NNzbd;6TgL5^aY[Ejb<Zn3
+l865
+L719
+V9WJKFIm^Nha3f_lO7lU]S1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 RclB@AN2WMM`L6AjlE7ba1
+Elc2_all_tb
+R21
+R2
+R3
+R4
+R1
+R5
+R6
+R7
+l0
+L896
+VbeMca6efnUiWdTWbf[FH61
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 FGbdeKQ]6T:>QXLN3JljP3
+Atb_architecture
+R2
+R3
+R4
+R1
+Z24 DEx4 work 10 lc2_all_tb 0 22 beMca6efnUiWdTWbf[FH61
+l911
+L899
+VUMeBH_3abFg5^CONmLB7e3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 ZA]?Oj4SCMQ:=i>;kPgj=3
+Elc2_alu
+R21
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L332
+VR^W4Pk0?W6g6ma[G?;3TS3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 5FWjV9XOco;eL6>5`WF>Y2
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 7 lc2_alu 0 22 R^W4Pk0?W6g6ma[G?;3TS3
+l342
+L341
+Vc^iXAA5SQYO<3VR_7P?9S2
+!s100 f7^=jSfRV?LKRoViG0VGB2
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Emux2
+R21
+R3
+R4
+R5
+R6
+R7
+l0
+L149
+V]aXoo@==VB7`GXRF@>4RA1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 lZW_b]fnFbhcz`;6e<Q0K0
+Abhv
+R3
+R4
+DEx4 work 4 mux2 0 22 ]aXoo@==VB7`GXRF@>4RA1
+l158
+L157
+V?dNeKz<Y:ZoFg``MYSb0V3
+!s100 iiD_76L]fNVn=M5KbKl303
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Emux4
+R21
+R3
+R4
+R5
+R6
+R7
+l0
+L40
+VH_Be6g8S?P7c]8D]T=QUl0
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 b6eblRm=;F=E`nWF84cd_2
+Abhv
+R3
+R4
+DEx4 work 4 mux4 0 22 H_Be6g8S?P7c]8D]T=QUl0
+l51
+L50
+VOCI`0kiL0Hg[3aA:n4nNX1
+!s100 PE>L:lXhK?YoO7GeJ?S4Y3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Emuxr
+R21
+R3
+R4
+R5
+R6
+R7
+l0
+L176
+VkPA<:iiVMzfBP6:X8hcJ=1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 XT]295^h68b6mXB?zZd@;1
+Abhv
+R3
+R4
+DEx4 work 4 muxr 0 22 kPA<:iiVMzfBP6:X8hcJ=1
+l185
+L184
+VjOE^kbdm<47lioTfbZ:WV1
+!s100 dXZ[0SoTTN?oO<UFHcj1K2
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Eram_module
+Z25 w1418394575
+R2
+R1
+R3
+R4
+R5
+Z26 8C:/Users/lenovo/Documents/combination for n=7 r=3.vhd
+Z27 FC:/Users/lenovo/Documents/combination for n=7 r=3.vhd
+l0
+L6
+Vg?FSHQ3I72;AV4DIH<N2G3
+!s100 Pan4mJnR[83LAEzjaV]9^0
+R8
+32
+Z28 !s108 1418394576.212000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Documents/combination for n=7 r=3.vhd|
+Z30 !s107 C:/Users/lenovo/Documents/combination for n=7 r=3.vhd|
+R12
+R13
+Abhv
+R2
+R1
+R3
+R4
+Z31 DEx4 work 10 ram_module 0 22 g?FSHQ3I72;AV4DIH<N2G3
+l19
+L16
+Z32 V;QPzni_=]cG6mT]Wc1?YT0
+!s100 PaG@J4NdMV]=`mAV3][a?2
+R8
+32
+R28
+R29
+R30
+R12
+R13
+Ereg
+R21
+R3
+R4
+R5
+R6
+R7
+l0
+L231
+V`lT2=1ZVWLVX<J2_Q8zCl3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 Rm7hLN@TfUooY4hVj4Eo82
+Abhv
+R3
+R4
+DEx4 work 3 reg 0 22 `lT2=1ZVWLVX<J2_Q8zCl3
+l240
+L239
+Vza_9NA:N:0W6PC1z=01_@1
+!s100 kYA8AE?h464kGH7gKEeJ92
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Eregister_file
+R21
+R2
+R1
+R3
+R4
+R5
+R6
+R7
+l0
+L264
+V>UdVe6S62zYB@6AKQnbZY1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 9Wzd4@BX7m08V4<_hKS9R1
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 13 register_file 0 22 >UdVe6S62zYB@6AKQnbZY1
+l288
+L285
+V_@=Imf?JYiM72ScaIezP30
+!s100 mmlgcaa@43<P12Kcg6d7O1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Esext
+R21
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L206
+VkB^8AmIWMlVQd3gQNSQFn1
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 V^5Wm2RRdM[B=`WjVHW[R1
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 4 sext 0 22 kB^8AmIWMlVQd3gQNSQFn1
+l213
+L212
+V8PzN4=Vd_F;2nRGc?lzEe2
+!s100 ]gNj1PjM0`=`mbL1Ab83^3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+Ctestbench_for_lc2_all
+aTB_ARCHITECTURE
+elc2_all_tb
+R23
+DAx4 work 10 lc2_all_tb 15 tb_architecture 22 UMeBH_3abFg5^CONmLB7e3
+R2
+R3
+R4
+R1
+R24
+R21
+R5
+R6
+R7
+l0
+L930
+VA:;dVKATJ=VH:?mj:8Jg;3
+R8
+32
+R22
+R10
+R11
+R12
+R13
+!s100 nd1:LifEWYdP4Q;c[0MAm1
+Exor_ent
+R14
+R3
+R4
+R5
+Z33 8C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/XOR_gate.vhd
+Z34 FC:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/XOR_gate.vhd
+l0
+L12
+VeQd4jWOg0O>M=RESUOP@_0
+R8
+32
+Z35 !s108 1416919654.160000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/XOR_gate.vhd|
+Z37 !s107 C:/Users/lenovo/Documents/学习/大二上/计组/lab05/04.Tut04-1.Demo/XOR_gate.vhd|
+R12
+R13
+!s100 Cj<JY3GdEd?<]R?R>R=2@0
+Abehv2
+R3
+R4
+Z38 DEx4 work 7 xor_ent 0 22 eQd4jWOg0O>M=RESUOP@_0
+l37
+L36
+V[457RX`[na2oSibJZKVRo3
+R8
+32
+R35
+R36
+R37
+R12
+R13
+!s100 aADGLo^P2zEYhjMJBnB[Y3
+Abehv1
+R3
+R4
+R38
+l22
+L21
+VAT9HbeAGQ>jJ1EgCSEgFS1
+R8
+32
+R35
+R36
+R37
+R12
+R13
+!s100 n9dlJ`LWHVhYAA:dG<8MY2

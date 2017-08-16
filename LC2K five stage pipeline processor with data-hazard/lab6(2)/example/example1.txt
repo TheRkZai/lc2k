@@ -1,0 +1,26 @@
+        lw      0       2       mcand   load register2 with 11        
+        lw      0       3       mplier  load register3 with 2
+        add     2       3       1       register1=register 2 + register 3 = 13
+        add     1       1       1       register1=26
+        lw      0       4       times   register4=15
+        add     4       4       4       register4=30
+        lw      0       5       pos1    register5=1
+        add     5       5       5       register5=2
+        add     2       5       6       register6=register 2 + register 5 = 13
+        add     6       6       6       register6=26
+        add     6       6       6       register6=52
+        sw      0       6       roy     roy=52
+        add     6       6       6       register6=104
+        sw      6       6       you     you=104
+        lw      0       7       you     register7=104
+done    halt                            end of program
+mcand   .fill   11                      change any value of multiplicand as you want
+mplier  .fill   2                       change any value of multiplier as you want          
+pos1    .fill   1                       postive 1
+neg1    .fill   -1                      negative 1
+five    .fill   5     
+times   .fill   15                      loop times
+addr    .fill   10
+stack   .fill   0
+roy     .fill   0
+you     .fill   0

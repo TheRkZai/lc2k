@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.49d on Fri Jan 09 23:23:53 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "regvalue<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "regvalue<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "regvalue<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "regvalue<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "regvalue<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "regvalue<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "regvalue<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "regvalue<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "clock" LOCATE = SITE "G12" LEVEL 1;
+PIN clock_pin<0> = BEL "clock" PINNAME PAD;
+PIN "clock_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "reset" LOCATE = SITE "C11" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "regnum0" LOCATE = SITE "N3" LEVEL 1;
+COMP "regnum1" LOCATE = SITE "E2" LEVEL 1;
+COMP "regnum2" LOCATE = SITE "F3" LEVEL 1;
+COMP "regnum3" LOCATE = SITE "G3" LEVEL 1;
+COMP "regnum4" LOCATE = SITE "B4" LEVEL 1;
+COMP "regnum5" LOCATE = SITE "K3" LEVEL 1;
+COMP "regnum6" LOCATE = SITE "L3" LEVEL 1;
+COMP "regnum7" LOCATE = SITE "P11" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

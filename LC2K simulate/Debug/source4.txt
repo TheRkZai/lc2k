@@ -1,0 +1,11 @@
+        lw      0       1       five    load reg1 with 5
+        lw      0       2       ten     load reg2 with 10
+        add     1       1       3       reg3=10
+        add     2       2       4       reg4=20
+        add     1       2       5       reg5=15
+        sw      0       3       11      mem[11]=10
+        sw      0       4       12      mem[12]=20
+        sw      0       5       13      mem[13]=15
+        halt       
+five    .fill   5
+ten     .fill   10

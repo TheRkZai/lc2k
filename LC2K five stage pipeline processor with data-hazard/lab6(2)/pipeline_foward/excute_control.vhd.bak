@@ -1,0 +1,67 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_arith.all;
+entity excute_control is
+port(
+rst: in std_logic;
+clk: in std_logic;
+opcode: in std_logic_vector( 2 downto 0);
+inhazard1: in std_logic;
+inhazard2: in std_logic;
+inhazard3: in std_logic;
+inhazard4: in std_logic;
+muxout_1: out std_logic_vector(1 downto 0);
+muxout_2: out std_logic_vector(1 downto 0);
+aluout: out std_logic
+);
+end excute_control;
+architecture bhv of excute_control is
+constant ADD : std_logic_vector(2 downto 0) := "000";
+constant NAD : std_logic_vector(2 downto 0) := "001";
+constant LW : std_logic_vector(2 downto 0) := "010";
+constant SW : std_logic_vector(2 downto 0) := "011";
+constant BEQ : std_logic_vector(2 downto 0) := "100";
+constant JALR : std_logic_vector(2 downto 0) := "101";
+constant HALT : std_logic_vector(2 downto 0) := "110";
+constant NOOP : std_logic_vector(2 downto 0) := "111";
+begin
+   process(clk,rst,opcode,inhazard1,inhazard2,inhazard3,inhazard4)
+     begin
+       if(rst ='1') then
+          muxout_1<="10";
+          muxout_2<="00";
+          aluout<='0';
+        else
+          if(opcode = ADD) then
+             aluout<='0';
+          elsif(opcode = NAD) then 
+             aluout<='1';
+          else
+             aluout<='0';
+          end if;
+          
+         if(inhazard1 ='1' or inhazard3 ='1') then
+            if(inhazard1 ='1') then
+               muxout_1<="01";
+            elsif(inhazard3 ='1') then
+               muxout_1<="00";
+             end if;
+         else
+             muxout_1<="10";
+         end if;
+         
+         if(opcode = LW or opcode =SW or opcode =BEQ) then
+            muxout_2<="11";
+         elsif(inhazard2 = '1' or inhazard4 ='1') then
+            if(inhazard2 ='1') then
+               muxout_2<="10";
+             elsif(inhazard4 ='1') then
+               muxout_2<="01";
+             end if;
+         else
+              muxout_2<="00";
+            end if;
+      end if;
+end process;
+end bhv;

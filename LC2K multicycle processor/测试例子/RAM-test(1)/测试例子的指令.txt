@@ -1,0 +1,39 @@
+        lw      0       1       n       register1=n
+        lw      0       2       r       register2=r
+        lw      0       6       comAdr  prepare to call combination funtion , register 6 hold the comAdr
+        jalr    6       7               call comb; register7=return address; register3=answer
+        halt
+comb    beq     1       2       return  if n==r branch  to return ;return 1;
+        beq     0       2       return  if r==0 branch  to return ;return 1;
+        sw      5       7       stack   save return address on stack
+        lw      0       6       pos1    register6=1    
+        add     5       6       5       increment stack pointer
+        sw      5       1       stack   save n on stack
+        add     5       6       5       increment stack pointer
+        sw      5       2       stack   save r on stack
+        add     5       6       5       increment stack pointer
+        lw      0       6       neg1    register6=-1
+        add     1       6       1       n=n-1
+        lw      0       6       comAdr  prepare to call combination function. register 6 hold the comAdr
+        jalr    6       7               call comb ;register7=return address
+        lw      0       6       neg1    register6=-1
+        add     2       6       2       r=r-1
+        lw      0       6       comAdr  prepare to call combination funtion , register 6 hold the comAdr
+        jalr    6       7               call comb ;register7=return address 
+        lw      0       6       neg1
+        add     5       6       5       decrement stack pointer
+        lw      5       2       stack   recover original register2 with r
+        add     5       6       5       decrement stack pointer
+        lw      5       1       stack   recover original register1 with n
+        add     5       6       5       decrement stack pointer
+        lw      5       7       stack   recover return address
+        jalr    7       6               jump back
+return  lw      0       6       pos1    register6=1      
+        add     3       6       3       register3++
+        jalr    7       6               jump back
+pos1    .fill   1                       positive 1
+neg1    .fill   -1                      negative 1
+comAdr  .fill   comb                    contains the address of combine
+n       .fill   7                       n is 7
+r       .fill   3                       r is 3
+stack   .fill   0                       beginning of stack (value is irrelevant)

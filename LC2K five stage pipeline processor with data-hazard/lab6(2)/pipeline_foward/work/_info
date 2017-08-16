@@ -1,0 +1,865 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\lenovo\Documents\work\LC2K pipeline
+Eadder
+Z0 w1420078449
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\lenovo\Desktop\lab6(2)\pipeline_foward
+Z6 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/adder.vhd
+Z7 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/adder.vhd
+l0
+L6
+V3OmANhQV5>mFdQGza0H391
+Z8 OV;C;10.0d;49
+32
+Z9 !s108 1420168585.249000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/adder.vhd|
+Z11 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/adder.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 `E[c3ccZQ1^VhE`TcQ6:O3
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 3OmANhQV5>mFdQGza0H391
+l12
+L11
+VMJSSN8^6`D;;LR23hTJA@1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 kLS;6i2j_::^QoooRPL;<3
+Ebranch
+Z14 w1420078473
+R1
+R2
+R3
+R4
+R5
+Z15 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/branch.vhd
+Z16 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/branch.vhd
+l0
+L6
+V>:J=mJnLz?4h6d383?1S50
+R8
+32
+Z17 !s108 1420168586.109000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/branch.vhd|
+Z19 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/branch.vhd|
+R12
+R13
+!s100 3IO0Q3:k;XSCQ91J5MzjL2
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 6 branch 0 22 >:J=mJnLz?4h6d383?1S50
+l15
+L14
+V2?6ScO0F^C6kfZFL?E`Rc1
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 mHWTjFf>2QW[OE49RNLYz0
+Edata_hazatd_detect
+Z20 w1420167388
+R3
+R4
+R5
+Z21 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/data_hazard.vhd
+Z22 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/data_hazard.vhd
+l0
+L4
+VA;j@[:melg1Q2:U@TiSIA0
+R8
+32
+Z23 !s108 1420168586.514000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/data_hazard.vhd|
+Z25 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/data_hazard.vhd|
+R12
+R13
+!s100 >C@VoSVQgTP;3oF0B=O[X2
+Abhv
+R3
+R4
+DEx4 work 18 data_hazatd_detect 0 22 A;j@[:melg1Q2:U@TiSIA0
+l23
+L22
+V1ccB9m6gEPV5??:fJooRg0
+R8
+32
+R23
+R24
+R25
+R12
+R13
+!s100 Q:]L6iW60dR@7O5M6eCl:0
+Edata_mem
+Z26 w1420123355
+R2
+R1
+R3
+R4
+R5
+Z27 8C:/Users/lenovo/Desktop/lab6(2)/example/ram_2.vhd
+Z28 FC:/Users/lenovo/Desktop/lab6(2)/example/ram_2.vhd
+l0
+L6
+Vii[IHiTYTdKa8o7LZR;X93
+!s100 6c4H?4XIb=Gzl;fZGm@m]2
+R8
+32
+Z29 !s108 1420168593.823000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/example/ram_2.vhd|
+Z31 !s107 C:/Users/lenovo/Desktop/lab6(2)/example/ram_2.vhd|
+R12
+R13
+Abhv
+R2
+R1
+R3
+R4
+Z32 DEx4 work 8 data_mem 0 22 ii[IHiTYTdKa8o7LZR;X93
+l23
+L19
+Z33 V_?@[Zm^BGIdJXjHN=;THI0
+Z34 !s100 Ld:TFV`@dHb<Pgg`[4MNY3
+R8
+32
+R29
+R30
+R31
+R12
+R13
+Edecode_control
+Z35 w1419771271
+R1
+R2
+R3
+R4
+R5
+Z36 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/decode_control.vhd
+Z37 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/decode_control.vhd
+l0
+L5
+VVY2Ui29jj;5W4gfLg2oKo1
+R8
+32
+Z38 !s108 1420168586.785000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/decode_control.vhd|
+Z40 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/decode_control.vhd|
+R12
+R13
+!s100 VkHa56dTAcRP@WEejC>gn3
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 14 decode_control 0 22 VY2Ui29jj;5W4gfLg2oKo1
+l22
+L13
+VVFi7L]dLMQ4Q[N]Ob>PEZ3
+R8
+32
+R38
+R39
+R40
+R12
+R13
+!s100 PkTl`z1Fi`H?M[fzY?K@a3
+Edest_reg
+Z41 w1420124483
+R3
+R4
+R5
+Z42 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/dest_reg.vhd
+Z43 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/dest_reg.vhd
+l0
+L4
+VDS:I[X`W>;oJVRPD[]BlS3
+R8
+32
+Z44 !s108 1420168587.122000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/dest_reg.vhd|
+Z46 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/dest_reg.vhd|
+R12
+R13
+!s100 5L34_AHH:GEJgYO0CK]fb2
+Abhv
+R3
+R4
+DEx4 work 8 dest_reg 0 22 DS:I[X`W>;oJVRPD[]BlS3
+l18
+L17
+V?RfV^YQaT4gTRSERo>Hoe1
+R8
+32
+R44
+R45
+R46
+R12
+R13
+!s100 ME?Z=8UO2f]9[l68U^Yo;0
+Eex_mem_reg
+Z47 w1420081740
+R2
+R1
+R3
+R4
+R5
+Z48 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/EX_MEM_REG.vhd
+Z49 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/EX_MEM_REG.vhd
+l0
+L6
+VzXlO=EJ3b`ncI>dF[dEFT2
+R8
+32
+Z50 !s108 1420168587.702000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/EX_MEM_REG.vhd|
+Z52 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/EX_MEM_REG.vhd|
+R12
+R13
+!s100 d=>S`VK2R<fhTRToJn_Kg1
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 10 ex_mem_reg 0 22 zXlO=EJ3b`ncI>dF[dEFT2
+l24
+L23
+Vb6;eLz1>89TS[<a_Uf3n01
+R8
+32
+R50
+R51
+R52
+R12
+R13
+!s100 kG:jX?M^7?m:ZkA=DNoh_2
+Eexcute_control
+Z53 w1420168067
+R1
+R2
+R3
+R4
+R5
+Z54 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/excute_control.vhd
+Z55 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/excute_control.vhd
+l0
+L5
+V?Q27iOog2b5S@b_TnGzT=3
+R8
+32
+Z56 !s108 1420168587.989000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/excute_control.vhd|
+Z58 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/excute_control.vhd|
+R12
+R13
+!s100 doK[Yd6MSLFnlV[X0NBn:0
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 14 excute_control 0 22 ?Q27iOog2b5S@b_TnGzT=3
+l29
+L20
+Vk?h_Se[VRB:?=ma^=3P?G3
+R8
+32
+R56
+R57
+R58
+R12
+R13
+!s100 Ejz<R047hNTQ]3=5ASh432
+Efetch_control
+Z59 w1420106426
+R1
+R2
+R3
+R4
+R5
+Z60 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/fetch_control.vhd
+Z61 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/fetch_control.vhd
+l0
+L5
+VH_oeSkGoO32gl8jgGnVQl1
+R8
+32
+Z62 !s108 1420168588.299000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/fetch_control.vhd|
+Z64 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/fetch_control.vhd|
+R12
+R13
+!s100 ?aQkRnF>jO>BPA^4_Yef10
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 13 fetch_control 0 22 H_oeSkGoO32gl8jgGnVQl1
+l17
+L16
+VeEHI7^P;NcMmZz0UGBA:j0
+R8
+32
+R62
+R63
+R64
+R12
+R13
+!s100 6eQe6bNc]<16CjAbj^b<;2
+Eid_ex_reg
+Z65 w1420103022
+R2
+R1
+R3
+R4
+R5
+Z66 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ID_EX_REG.vhd
+Z67 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ID_EX_REG.vhd
+l0
+L6
+V@9I6ZS0e5HfI_Y4P6lK;U1
+R8
+32
+Z68 !s108 1420168589.307000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ID_EX_REG.vhd|
+Z70 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ID_EX_REG.vhd|
+R12
+R13
+!s100 jJm=T25<OHPMG@b32`kFe1
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 9 id_ex_reg 0 22 @9I6ZS0e5HfI_Y4P6lK;U1
+l32
+L31
+V;S`Rf>e_>kS3JcW@@O`=Q3
+R8
+32
+R68
+R69
+R70
+R12
+R13
+!s100 mDQ41B4:FIij^jeX4>h8c3
+Eif_id_reg
+Z71 w1420123469
+R2
+R1
+R3
+R4
+R5
+Z72 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/IF_ID_REG.vhd
+Z73 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/IF_ID_REG.vhd
+l0
+L6
+VIbP:bLbC5`NeLM<DkW>7<0
+R8
+32
+Z74 !s108 1420168589.620000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/IF_ID_REG.vhd|
+Z76 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/IF_ID_REG.vhd|
+R12
+R13
+!s100 Q^kd6RRPPh_V@fnJlhd`z3
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 9 if_id_reg 0 22 IbP:bLbC5`NeLM<DkW>7<0
+l18
+L17
+VE0YH<[IXbLkIj[J^dQiZ^3
+R8
+32
+R74
+R75
+R76
+R12
+R13
+!s100 WNUJ8EUAocgbh^fCan0F`1
+Elc2_alu
+Z77 w1420078769
+R1
+R2
+R3
+R4
+R5
+Z78 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ALU.vhd
+Z79 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ALU.vhd
+l0
+L7
+VR^W4Pk0?W6g6ma[G?;3TS3
+R8
+32
+Z80 !s108 1420168585.606000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ALU.vhd|
+Z82 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/ALU.vhd|
+R12
+R13
+!s100 mL]L`8;;UPJ6=6N0=H_z10
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 7 lc2_alu 0 22 R^W4Pk0?W6g6ma[G?;3TS3
+l17
+L16
+Vc^iXAA5SQYO<3VR_7P?9S2
+R8
+32
+R80
+R81
+R82
+R12
+R13
+!s100 zUah01OT1K0e72O5Sen2g0
+Emem_wb_reg
+Z83 w1420081785
+R2
+R1
+R3
+R4
+R5
+Z84 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/MEM_WB_REG.vhd
+Z85 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/MEM_WB_REG.vhd
+l0
+L6
+Vh4n1aghlU`K>dQ>NknK[:2
+R8
+32
+Z86 !s108 1420168590.093000
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/MEM_WB_REG.vhd|
+Z88 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/MEM_WB_REG.vhd|
+R12
+R13
+!s100 aDEbCAc`3LcTaE]X4[RC93
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 10 mem_wb_reg 0 22 h4n1aghlU`K>dQ>NknK[:2
+l21
+L20
+VPX5fVOmHMA@5@:;WlMW_D1
+R8
+32
+R86
+R87
+R88
+R12
+R13
+!s100 VP4d_cj6>=QYH93o2M_g_1
+Ememory_control
+Z89 w1419865350
+R1
+R2
+R3
+R4
+R5
+Z90 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/memory_control.vhd
+Z91 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/memory_control.vhd
+l0
+L5
+VFVi^j_oX?81h?]`hCz`o<2
+R8
+32
+Z92 !s108 1420168590.565000
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/memory_control.vhd|
+Z94 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/memory_control.vhd|
+R12
+R13
+!s100 38[GdPk]g4o>YlL3:_XIX1
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 14 memory_control 0 22 FVi^j_oX?81h?]`hCz`o<2
+l23
+L14
+VR:Nd>dP8E7CJ3FTKObHE>3
+R8
+32
+R92
+R93
+R94
+R12
+R13
+!s100 8mAfcQ`_GaHaddRzaZYcB3
+Emux2
+Z95 w1420078563
+R3
+R4
+R5
+Z96 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/mux2.vhd
+Z97 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/mux2.vhd
+l0
+L5
+V]aXoo@==VB7`GXRF@>4RA1
+R8
+32
+Z98 !s108 1420168590.913000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/mux2.vhd|
+Z100 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/mux2.vhd|
+R12
+R13
+!s100 ]o_l4R?I80blX3BUGYSKa3
+Abhv
+R3
+R4
+DEx4 work 4 mux2 0 22 ]aXoo@==VB7`GXRF@>4RA1
+l14
+L13
+V?dNeKz<Y:ZoFg``MYSb0V3
+R8
+32
+R98
+R99
+R100
+R12
+R13
+!s100 H2:j7XVfjM427hH9<;FDd0
+Emux4
+Z101 w1420078517
+R3
+R4
+R5
+Z102 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/four_to_one_mux.vhd
+Z103 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/four_to_one_mux.vhd
+l0
+L4
+VH_Be6g8S?P7c]8D]T=QUl0
+R8
+32
+Z104 !s108 1420168588.909000
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/four_to_one_mux.vhd|
+Z106 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/four_to_one_mux.vhd|
+R12
+R13
+!s100 O>5zIe5A?db5jL2];U=;Q0
+Abhv
+R3
+R4
+DEx4 work 4 mux4 0 22 H_Be6g8S?P7c]8D]T=QUl0
+l15
+L14
+VOCI`0kiL0Hg[3aA:n4nNX1
+R8
+32
+R104
+R105
+R106
+R12
+R13
+!s100 <[SD`6anbB7<S^LcSod3>3
+Emuxr
+Z107 w1420078599
+R3
+R4
+R5
+Z108 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_mux.vhd
+Z109 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_mux.vhd
+l0
+L4
+VkPA<:iiVMzfBP6:X8hcJ=1
+R8
+32
+Z110 !s108 1420168592.331000
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_mux.vhd|
+Z112 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_mux.vhd|
+R12
+R13
+!s100 [bLOzDA=UaBIhmTecoeOH3
+Abhv
+R3
+R4
+DEx4 work 4 muxr 0 22 kPA<:iiVMzfBP6:X8hcJ=1
+l13
+L12
+VjOE^kbdm<47lioTfbZ:WV1
+R8
+32
+R110
+R111
+R112
+R12
+R13
+!s100 Y3?>Bf[W:;z3H<:h:`f`T0
+Epipeline_all
+Z113 w1420168072
+R1
+R2
+R3
+R4
+R5
+Z114 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/pipeline_all.vhd
+Z115 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/pipeline_all.vhd
+l0
+L7
+V_c=TP:l7E?^cW6D8Vf7VR1
+R8
+32
+Z116 !s108 1420168591.270000
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/pipeline_all.vhd|
+Z118 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/pipeline_all.vhd|
+R12
+R13
+!s100 T4SUIBf<i0`GGA:i5f8AT0
+Astr
+R1
+R2
+R3
+R4
+DEx4 work 12 pipeline_all 0 22 _c=TP:l7E?^cW6D8Vf7VR1
+l335
+L12
+VYGKekmlXIOc07]fhATLPM1
+R8
+32
+R116
+R117
+R118
+R12
+R13
+!s100 ZMF0@Y?J[NF788VZ3Cjoe2
+Epipeline_all_tb
+Z119 w1420078308
+R2
+R3
+R4
+R1
+R5
+Z120 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/test_bench.vhd
+Z121 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/test_bench.vhd
+l0
+L9
+VMe28XT2^34@N7m4;=J1I80
+R8
+32
+Z122 !s108 1420168593.186000
+Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/test_bench.vhd|
+Z124 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/test_bench.vhd|
+R12
+R13
+!s100 ^Xkgm<NEP>?5YAk?c>iTP2
+Atb_architecture
+R2
+R3
+R4
+R1
+DEx4 work 15 pipeline_all_tb 0 22 Me28XT2^34@N7m4;=J1I80
+l24
+L12
+VF7=54dAeHJc1boD]nG^R50
+R8
+32
+R122
+R123
+R124
+R12
+R13
+!s100 Bn@HTGkQ>7Ui6j>U6Ugi[0
+Ereg
+Z125 w1420105861
+R3
+R4
+R5
+Z126 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg.vhd
+Z127 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg.vhd
+l0
+L4
+V`lT2=1ZVWLVX<J2_Q8zCl3
+R8
+32
+Z128 !s108 1420168591.779000
+Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg.vhd|
+Z130 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg.vhd|
+R12
+R13
+!s100 ;DBC`N^eGD?iZ4^DW;hMa3
+Abhv
+R3
+R4
+DEx4 work 3 reg 0 22 `lT2=1ZVWLVX<J2_Q8zCl3
+l13
+L12
+VY49h>NEL7>37bn]AG5c`j3
+R8
+32
+R128
+R129
+R130
+R12
+R13
+!s100 gNIlNaP0gabZNaLEBQi:70
+Ereg_dest
+Z131 w1420123111
+R3
+R4
+R5
+R42
+R43
+l0
+L4
+V]V]XR__1^7P1lH:LLZeZN1
+R8
+32
+Z132 !s108 1420123674.228000
+R45
+R46
+R12
+R13
+!s100 e[?bDiPe1<?zd_gR1GgSa1
+Abhv
+R3
+R4
+DEx4 work 8 reg_dest 0 22 ]V]XR__1^7P1lH:LLZeZN1
+l18
+L17
+VKA9Pe;gNli6=[oM1Ej?7z2
+R8
+32
+R132
+R45
+R46
+R12
+R13
+!s100 CTN140a`>4]hccHeCkBgL3
+Eregister_file
+Z133 w1420078745
+R2
+R1
+R3
+R4
+R5
+Z134 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_file.vhd
+Z135 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_file.vhd
+l0
+L7
+V>UdVe6S62zYB@6AKQnbZY1
+R8
+32
+Z136 !s108 1420168592.064000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_file.vhd|
+Z138 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/reg_file.vhd|
+R12
+R13
+!s100 m]?QOkbP7kM1VY?Yg]4[?1
+Abhv
+R2
+R1
+R3
+R4
+DEx4 work 13 register_file 0 22 >UdVe6S62zYB@6AKQnbZY1
+l31
+L28
+VBE;E3hh2USBmN0V`U49Wg0
+R8
+32
+R136
+R137
+R138
+R12
+R13
+!s100 Se1FDz]PV=zjPBg?IgBz40
+Esext
+Z139 w1420078638
+R1
+R2
+R3
+R4
+R5
+Z140 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/sign_extend.vhd
+Z141 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/sign_extend.vhd
+l0
+L7
+VkB^8AmIWMlVQd3gQNSQFn1
+R8
+32
+Z142 !s108 1420168592.831000
+Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/sign_extend.vhd|
+Z144 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/sign_extend.vhd|
+R12
+R13
+!s100 ?g6H:3Labj@Rj8c<Q^aGo2
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 4 sext 0 22 kB^8AmIWMlVQd3gQNSQFn1
+l14
+L13
+V8PzN4=Vd_F;2nRGc?lzEe2
+R8
+32
+R142
+R143
+R144
+R12
+R13
+!s100 hQIdhR6Xnd=c3`mM[j2`z3
+Ewrite_back_control
+Z145 w1419865458
+R1
+R2
+R3
+R4
+R5
+Z146 8C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/write_back_control.vhd
+Z147 FC:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/write_back_control.vhd
+l0
+L5
+VUlU>z8^TRNAEmUz1G1c:L0
+R8
+32
+Z148 !s108 1420168593.549000
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/write_back_control.vhd|
+Z150 !s107 C:/Users/lenovo/Desktop/lab6(2)/pipeline_foward/write_back_control.vhd|
+R12
+R13
+!s100 C1[mJbhI0iOg2=G:?8HAW1
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 18 write_back_control 0 22 UlU>z8^TRNAEmUz1G1c:L0
+l23
+L14
+VSDHjDj>YzbgHH2W4GU<=21
+!s100 ;H<bM:L68Q]0cZfdI4QJz0
+R8
+32
+R148
+R149
+R150
+R12
+R13

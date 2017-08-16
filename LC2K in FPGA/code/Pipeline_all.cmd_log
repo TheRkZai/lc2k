@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/example/code/Pipeline_all.xst" -ofn "E:/example/code/Pipeline_all.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pp.ucf -p xc3s100e-cp132-4 Pipeline_all.ngc Pipeline_all.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Pipeline_all_map.ncd Pipeline_all.ngd Pipeline_all.pcf 
+par -w -intstyle ise -ol high -t 1 Pipeline_all_map.ncd Pipeline_all.ncd Pipeline_all.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Pipeline_all.twx Pipeline_all.ncd -o Pipeline_all.twr Pipeline_all.pcf -ucf pp.ucf 
+bitgen -intstyle ise -f Pipeline_all.ut Pipeline_all.ncd 

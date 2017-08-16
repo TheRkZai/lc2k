@@ -1,0 +1,24 @@
+NET "clock" LOC="G12";
+NET "reset" LOC="C11";
+
+NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "regnum0" LOC="N3";
+NET "regnum1" LOC="E2";
+NET "regnum2" LOC="F3";
+NET "regnum3" LOC="G3";
+NET "regnum4" LOC="B4";
+NET "regnum5" LOC="K3";
+NET "regnum6" LOC="L3";
+NET "regnum7" LOC="P11";
+
+NET "regvalue(0)" LOC="M5";
+NET "regvalue(1)" LOC="M11";
+NET "regvalue(2)" LOC="P7";
+NET "regvalue(3)" LOC="P6";
+NET "regvalue(4)" LOC="N5";
+NET "regvalue(5)" LOC="N4";
+NET "regvalue(6)" LOC="P4";
+NET "regvalue(7)" LOC="G1";

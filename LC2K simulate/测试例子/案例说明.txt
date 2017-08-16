@@ -1,0 +1,34 @@
+test 1:老师给的例子
+test 2:int a=0,b=5,c=0;
+       while(a!=b)
+       {
+            a--;
+            c++;
+        }
+        在source2.txt中可找到指令
+        在test2.txt中找到机器码
+        在output2.txt中找到对应的结果
+test3:测试nand
+      int a=1,b=0;
+      a nand b
+      a nand a
+      b nand b
+      在source3.txt中可找到指令
+      在test3.txt中找到机器码
+      在output3.txt中找到对应的结果
+test4:测试add和sw
+      int a=5;
+      int b=10;
+      int c=a+a=10;
+      int d=b+b=20;
+      int e=a+b=15;
+      再次存到内存的11,12,13位置中
+      在source4.txt中可找到指令
+      在test4.txt中找到机器码
+      在output4.txt中找到对应的结果
+test5:测试add 20次
+      在source5.txt中可找到指令
+      在test5.txt中找到机器码
+      在output5.txt中找到对应的结果
+   
+      

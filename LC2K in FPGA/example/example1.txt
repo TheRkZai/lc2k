@@ -1,0 +1,11 @@
+        lw      0       2       mcand   load register2 with 18        
+        lw      0       3       mplier  load register3 with 7
+        add     2       3       1       register1=register 2 + register 3 = 25
+        add     1       1       1       register1=36
+        nand    1       1       4       
+        lw      0       5       roy
+done    halt                            end of program
+mcand   .fill   18                      change any value of multiplicand as you want
+mplier  .fill   7                       change any value of multiplier as you want          
+roy     .fill   0
+you     .fill   0

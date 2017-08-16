@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\lenovo\Documents\work
+Eram_module
+Z0 w1418481640
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\lenovo\Documents\work\RAM_TEST(4)
+Z6 8C:/Users/lenovo/Documents/work/RAM_TEST(4)/test.vhd
+Z7 FC:/Users/lenovo/Documents/work/RAM_TEST(4)/test.vhd
+l0
+L6
+Vg?FSHQ3I72;AV4DIH<N2G3
+!s100 Pan4mJnR[83LAEzjaV]9^0
+Z8 OV;C;10.0d;49
+32
+Z9 !s108 1418481640.478000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/lenovo/Documents/work/RAM_TEST(4)/test.vhd|
+Z11 !s107 C:/Users/lenovo/Documents/work/RAM_TEST(4)/test.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abhv
+R1
+R2
+R3
+R4
+DEx4 work 10 ram_module 0 22 g?FSHQ3I72;AV4DIH<N2G3
+l19
+L16
+Vo:eKQTld=nc@idzK8DPH@3
+!s100 iRADMb1VITXF]Af8UPd]@0
+R8
+32
+R9
+R10
+R11
+R12
+R13

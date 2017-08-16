@@ -1,0 +1,11 @@
+C:/Users/lenovo/Documents/work/RAM_test(3)/mutiply(2).vhd {1 {vcom -work work -2002 -explicit C:/Users/lenovo/Documents/work/RAM_test(3)/mutiply(2).vhd
+Model Technology ModelSim ALTERA vcom 10.0d Compiler 2012.01 Jan 18 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ram_module
+-- Compiling architecture bhv of ram_module
+
+} {} {}}

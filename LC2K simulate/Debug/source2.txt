@@ -1,0 +1,14 @@
+        lw      0       1       one     load reg1 with 0        
+        lw      0       2       two     load reg2 with 5
+        lw      0       3       one     load reg3 with 0
+        lw      0       4       three   load reg4 with 1
+        lw      0       5       one     load reg5 with 0
+start   beq     1       2       done    
+        add     1       4       1       increment reg1
+        add     3       4       3       increment reg3
+        jalr    2       5
+        noop
+done    halt                            end of program
+one     .fill   0
+two     .fill   5
+three   .fill   1
